@@ -1,0 +1,262 @@
+/* Article.module.css */
+.article {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    /* font-size: 80px;
+    text-align: left;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    font-family: 'YourCustomFont', 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center; */
+    font-size: 4rem;
+    margin-bottom: '0rem';
+    font-family: 'YourCustomFont', 'Times New Roman', Times, serif;
+    text-align: left;
+
+}
+
+.mainheader {
+    /* font-size: 80px;
+    text-align: left;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    font-family: 'YourCustomFont', 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center; */
+    font-size: 4rem;
+    margin-bottom: '0rem';
+    font-family: 'YourCustomFont', 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+
+.thirdheader {
+    /* font-size: 80px;
+    text-align: left;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    font-family: 'YourCustomFont', 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center; */
+    font-size: 4rem;
+    margin-bottom: '0rem';
+    font-family: 'YourCustomFont', 'Times New Roman', Times, serif;
+    text-align: left;
+
+}
+
+.secheader {
+    /* font-size: 80px;
+    text-align: left;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    font-family: 'YourCustomFont', 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center; */
+    font-size: 4rem;
+    margin-bottom: '0rem';
+    font-family: 'YourCustomFont', 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+
+/* Add a wrapper for the left margin */
+.header-content {
+    max-width: 1200px; /* Adjust this value to your desired max width */
+    padding-left: 300px;
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 230px; /* Adjust this value to position the image down below the header */
+    z-index: 0; /* Make sure the image is behind the header */
+}
+
+/* Picture.module.css */
+.outer-box {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    gap: 10rem;
+    padding: 10rem; /* Adjust this value to increase the size of the outer box */
+    background-color: black;
+    border: 2px solid #2c5282;
+    border-radius: 0.75rem;
+    width: 100%;
+  }
+  
+  .inner-box {
+    background-color: white;
+    border: 2px solid #2c5282;
+    border-radius: 0.5rem;
+    padding: 3rem; /* Increase this value to increase the size of the inner box */
+    margin: 1rem 0; /* Add vertical margin of 1 rem (adjust as needed) */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+  }
+
+  .inner-box1 {
+
+    background-color: white;
+    border: 2px solid #2c5282;
+    border-radius: 0.5rem;
+    padding: 3rem; /* Increase this value to increase the size of the inner box */
+    margin: 1rem 0; /* Add vertical margin of 1 rem (adjust as needed) */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+
+    top: 0;
+    left: 0;
+  }
+  
+  .target-audience {
+    font-size: 18px;
+}
+
+.bi-male-female {
+    font-size: 16px;
+}
+
+.age {
+    font-size: 14px;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    flex-direction: row;
+}
+
+/* styles.module.css */
+.custom-font-size {
+    font-size: 1.2rem; /* Replace 24px with your desired font size */
+  }
+
+
+  /* styles.css */
+.customheading {
+    font-size: 4rem;
+    margin-bottom: '0.5rem';
+    font-family: 'YourCustomFont', 'Times New Roman', Times, serif;
+    text-align: left;
+  }
+
+    /* styles.css */
+.secheading {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+
+  .thirdheading {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+
+  .caption {
+    margin-top: 14px;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex; /* Add this to enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.fourthheading {
+    margin-top: 8px;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+
+  .ideaheading {
+    font-size: 4rem;
+    margin-bottom: '0.5rem';
+    font-family: 'YourCustomFont', 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-top: '50px';
+  }
+
+
+/* Page 2 stuff */
+
+.secondheader{
+    font-size: 4rem;
+    margin-bottom: '0rem';
+    font-family: 'YourCustomFont', 'Times New Roman', Times, serif;
+    text-align: center;
+        padding-bottom: 1rem;
+}
+
+.secondcaption {
+    margin-top: 14px;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex; /* Add this to enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-left: 10px;
+  }
+
+  /* styles.module.css */
+.imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  
+  
+  
