@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/TreasureHunterian/static/css/main.d7fd4d59.chunk.css",
-    "main.js": "/TreasureHunterian/static/js/main.80c38d86.chunk.js",
-    "main.js.map": "/TreasureHunterian/static/js/main.80c38d86.chunk.js.map",
+    "main.js": "/TreasureHunterian/static/js/main.faf06f67.chunk.js",
+    "main.js.map": "/TreasureHunterian/static/js/main.faf06f67.chunk.js.map",
     "runtime-main.js": "/TreasureHunterian/static/js/runtime-main.79a239c9.js",
     "runtime-main.js.map": "/TreasureHunterian/static/js/runtime-main.79a239c9.js.map",
     "static/css/2.5bfbd22f.chunk.css": "/TreasureHunterian/static/css/2.5bfbd22f.chunk.css",
@@ -148,6 +148,6 @@
     "static/css/2.5bfbd22f.chunk.css",
     "static/js/2.535715e4.chunk.js",
     "static/css/main.d7fd4d59.chunk.css",
-    "static/js/main.80c38d86.chunk.js"
+    "static/js/main.faf06f67.chunk.js"
   ]
 }
