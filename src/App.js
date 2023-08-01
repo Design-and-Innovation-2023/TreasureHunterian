@@ -26,7 +26,7 @@ function App() {
 	return (
 		<AnimatePresence>
 			<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
-				<Router>
+				<Router basename='/TreasureHunterian'>
 					<ScrollToTop />
 					<AppHeader />
 					<Suspense fallback={""}>
