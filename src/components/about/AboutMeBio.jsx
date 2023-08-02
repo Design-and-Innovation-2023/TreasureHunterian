@@ -160,13 +160,13 @@ Meet the team      </div>
 	 alt=""
 	 style={{ margin: 'auto' }}
    />
-   <h3 className="text-ternary-dark dark:text-ternary-light text-xl font-semibold my-2 text-center px-4 py-4">
+   <h3 className="text-xl font-semibold my-2 text-center px-4 py-4">
 	 {selectedImage.header}
    </h3>
-   <p className="text-ternary-dark dark:text-ternary-light text-center px-4 py-1"> {/* Add margin (spacing) to the top and bottom of the paragraph */}
+   <p className="text-center px-4 py-1"> {/* Add margin (spacing) to the top and bottom of the paragraph */}
 	 Contact: {selectedImage.email}
    </p>
-   <p className="text-ternary-dark dark:text-ternary-light text-center my-2 px-4 py-6"> {/* Add margin (spacing) to the top and bottom of the paragraph */}
+   <p className="text-center my-2 px-4 py-6"> {/* Add margin (spacing) to the top and bottom of the paragraph */}
 	 {selectedImage.bio}
    </p>
    <div className=" my-2 px-4 py-2" >
