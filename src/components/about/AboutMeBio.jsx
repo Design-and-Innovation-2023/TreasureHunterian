@@ -91,20 +91,13 @@ Meet the team      </div>
   
   <br></br>
        <p style={{ fontSize: '1.2rem' }}>
-          In our team's process of reflection, we conducted a thorough analysis to identify key recurring themes that emerged during the duration of our project.
-          This allowed us to gain valuable and meaningful insights into the collaborative efforts undertaken by each member.
-          We placed significant importance on considering multiple perspectives as well as taking into account relevant broader contextual factors, 
-          recognizing that diverse skill sets and viewpoints were brought forth by every individual within the team. 
-          By engaging in this comprehensive evaluation, we achieved an improved comprehension of the challenges encountered 
-          throughout this endeavor and were able to develop effective solutions accordingly. Throughout this reflective practice, 
-          genuine growth manifested itself through critical assessments made regarding both successes and setbacks experienced collectively, 
-          thereby resulting in actionable insights being derived from these evaluations. 
-          These invaluable learnings have not only enhanced our achievements within the project at hand but also equipped us with 
-          newfound abilities and knowledge for future undertakings moving forward. 
-          The story behind our accomplishments is one which fills us with immense pride - 
-          it symbolizes resilience demonstrated while conquering obstacles faced along with personal development undergone.
+        During our team's reflection process, we conducted a thorough analysis to identify key recurring themes that emerged during the duration of our project. This allowed us to gain valuable and meaningful insights into the collaborative efforts of each team member. We placed significant importance on considering multiple perspectives and took into account relevant broader contextual factors, recognizing the diverse skill sets and viewpoints brought forth by each individual within the team. By engaging in this comprehensive evaluation, we achieved an improved understanding of the challenges encountered throughout this endeavor and were able to develop effective solutions accordingly.
+        <br/><br/>
+        Throughout this reflective practice, we experienced genuine growth through critical assessments of both our successes and setbacks as a team. This resulted in actionable insights derived from these evaluations. These invaluable learnings have not only enhanced our achievements within the project at hand but also equipped us with newfound abilities and knowledge for future undertakings.
+        <br/><br/>
+        The story behind our accomplishments fills us with immense pride. It symbolizes the resilience we demonstrated while conquering obstacles and the personal development we underwent as individuals and as a team.
           <br/><br/>
-          We, Team 3B, are proud to present to you our final product, Treasure Hunterian.                               
+          We, Team 3B, are proud to present to you our final product, TREASURE HUNTerian.                               
           <br/><br/>                    
           <br></br>
           <b style={{ fontSize: '5rem', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>We are Proud.</b>
@@ -124,7 +117,7 @@ Meet the team      </div>
           The team would like to express their thanks to Professor Jonathan Grizou for his guidance and support throughout the project.
           Additionally, the team would also like to thank the staff at The Hunterian Museum for their support and feedback.
           The weekly meetings has been a great help in the development of the project, and we are grateful for the opportunity to work with them.
-          Honorable mention to Ruth Fletcher for her guidance and directions in the project, and for her patience in answering our questions.
+          Honorable mention to Ruth Fletcher for her guidance and directions in the project, and for her patience in addressing all our inquiries.
           Lastly, the team would like to thank the teaching assistants for their help in the project and for their feedback.
         </p>
 
@@ -160,13 +153,13 @@ Meet the team      </div>
 	 alt=""
 	 style={{ margin: 'auto' }}
    />
-   <h3 className="text-ternary-dark dark:text-ternary-light text-xl font-semibold my-2 text-center px-4 py-4">
+   <h3 className="text-xl font-semibold my-2 text-center px-4 py-4">
 	 {selectedImage.header}
    </h3>
-   <p className="text-ternary-dark dark:text-ternary-light text-center px-4 py-1"> {/* Add margin (spacing) to the top and bottom of the paragraph */}
+   <p className="text-center px-4 py-1"> {/* Add margin (spacing) to the top and bottom of the paragraph */}
 	 Contact: {selectedImage.email}
    </p>
-   <p className="text-ternary-dark dark:text-ternary-light text-center my-2 px-4 py-6"> {/* Add margin (spacing) to the top and bottom of the paragraph */}
+   <p className="text-center my-2 px-4 py-6"> {/* Add margin (spacing) to the top and bottom of the paragraph */}
 	 {selectedImage.bio}
    </p>
    <div className=" my-2 px-4 py-2" >

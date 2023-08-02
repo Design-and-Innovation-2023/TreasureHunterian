@@ -62,10 +62,10 @@ const Resources = () => {
         <br></br>
 
         <section style={{
-          border: '3px solid #E57373',  // Nice red color border (You can change the color code as desired)
+          border: '3px solid #E57373',
           borderRadius: '8px',
           boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-          padding: '0.5rem',           // Add some padding to the section to make it slightly thicker
+          padding: '0.5rem',
         }}>
           <img src={require('../images/mainposter.png').default} alt="Poster Placeholder" style={{ maxWidth: '100%', marginBottom: '1rem' }} />
         </section>
