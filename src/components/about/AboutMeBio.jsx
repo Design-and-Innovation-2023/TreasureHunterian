@@ -97,7 +97,7 @@ Meet the team      </div>
         <br/><br/>
         The story behind our accomplishments fills us with immense pride. It symbolizes the resilience we demonstrated while conquering obstacles and the personal development we underwent as individuals and as a team.
           <br/><br/>
-          We, Team 3B, are proud to present to you our final product, Treasure Hunterian.                               
+          We, Team 3B, are proud to present to you our final product, TREASURE HUNTerian.                               
           <br/><br/>                    
           <br></br>
           <b style={{ fontSize: '5rem', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>We are Proud.</b>

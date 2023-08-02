@@ -297,7 +297,7 @@ const HomePage = () => {
     <p style={{ fontSize: '40px', textAlign: 'center', lineHeight: '60px', color: '#FFFFFF'}}>2</p>
   </div>
   <div className="text-ternary-dark dark:text-ternary-light">
-    <h1 className={styles.secheading}>Treasure Hunterian Game</h1>
+    <h1 className={styles.secheading}>TREASURE HUNTerian Game</h1>
   </div>
 </div>
 <br></br>
