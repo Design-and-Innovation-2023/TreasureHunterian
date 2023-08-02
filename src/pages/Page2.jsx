@@ -87,7 +87,7 @@ const HomePage = () => {
 		{
 			id: 1,
 			title: 'The Brainstorming Process ',
-			details: 'The team have came up with an exciting way to introduce educational content to engage children during their visit in the museum. An interactive adventure along with a companion guide which would accompany the players throughout their journey would captivate their interest in interacting with the application. The quest provides informative clues and guides, allowing children to explore the museum in a fun way.',
+			details: 'The team have came up with an exciting way to introduce educational content to engage children during their visit in the museum. An interactive adventure along with a companion guide which would accompany the players throughout their journey would captivate their interest in interacting with the application. The quest provides informative clues and guides, allowing the children to explore the museum in a fun way.',
 			image: idea32,
 		},
 		{
