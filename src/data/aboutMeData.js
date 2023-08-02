@@ -39,7 +39,7 @@ export const aboutMeData = [
 	{
 		id: 4,
 		header: 'Ivan - Tech Expert',
-		bio: 'In the quaint little town of Everbrook, nestled amidst rolling hills and lush forests, life seemed to flow at its own unhurried pace. The narrow cobblestone streets were lined with charming cottages adorned with colorful flower boxes, and the air carried the sweet scent of freshly baked bread from the local bakery. Everbrook was a place where neighbors knew each other by name, and the sense of community was palpable.',
+		bio: "Greetings, I'm Ivan, currently in my 2nd  year of studies at SIT-UoG's Computing Sciences course. This overseas immersion program enabled me to learn and work together with others in a fresh and exciting environment. As one of the Tech Experts in this Design Project, my role was to explore new ideas, test them out, and finally implement the ones that work best. The project allowed me to experiment with various design techniques and, together with my team, come up with a better solution that fits our client's needs. Overall, it was a joyous journey filled with both work and play, as I immersed myself in the culture of a new city.",
 		email: "damianivan221199@gmail.com",
 		profileImage: profileIvan, // Replace this URL with the appropriate image URL
 		githubLink: 'https://github.com/shingliya',

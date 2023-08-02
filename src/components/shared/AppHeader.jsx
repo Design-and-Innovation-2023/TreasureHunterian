@@ -163,11 +163,18 @@ const AppHeader = () => {
 						Our Application
 					</Link> */}
 					<Link
-					to="/application"
+					to="/OurApplication"
 					className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-					aria-label="Our Application"
+					aria-label="OurApplication"
 					>
-						Our Application
+					Our Application					
+					</Link>
+					<Link
+					to="/Resources"
+					className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+					aria-label="Resources"
+					>
+					Resources					
 					</Link>
 				</div>
 
