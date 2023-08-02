@@ -155,7 +155,7 @@ const HomePage = () => {
 		<div className="text-ternary-dark dark:text-ternary-light" >
     <h1 className={styles.secondheader}>
       <div className={styles.headerContent}>
-	  Wireframing and Usability Testing
+	  Ideation, Wireframing and Usability Testing
       </div>
     </h1>	
 	</div>
@@ -168,6 +168,8 @@ const HomePage = () => {
 		<figcaption className={styles.secondcaption} >Both teams, working in pairs, brainstorming ideas for the project</figcaption>
 		</div>
     </figure>
+
+	
 
 
 
@@ -185,6 +187,34 @@ const HomePage = () => {
 		Wireframing
 	  </p> */}
 		<section style={{ marginLeft: '19%', marginRight: '20%', padding: '1rem 2rem' }}>
+
+			<div className=" text-ternary-dark dark:text-ternary-light" >
+	<h1 className={styles.customheading}>Ideation</h1>
+	</div>
+
+	<div className=" text-ternary-dark dark:text-ternary-light" >
+	<h1 className={styles.secheading}>Idea 1: Object Recognition Visual Storytelling</h1>
+	</div>
+
+	<div className=" text-ternary-dark dark:text-ternary-light" >
+	<h1 className={styles.thirdheading}>The process involves using a camera to scan an artifact, triggering object recognition. Once the object is recognized, the system initiates appropriate animations that play out to convey a visual storytelling experience.</h1>
+	</div>
+
+	<div className=" text-ternary-dark dark:text-ternary-light" >
+	<h1 className={styles.secheading}>Idea 2: Treature Hunterian</h1>
+	</div>
+
+	<div className=" text-ternary-dark dark:text-ternary-light" >
+	<h1 className={styles.thirdheading}>This idea involves having puzzles at different locations of the museum. Each puzzle piece contains a fact about the artefact. Upon solving the puzzle, users will receive a digital art piece by the museum.</h1>
+	</div>
+
+	<div className=" text-ternary-dark dark:text-ternary-light" >
+	<h1 className={styles.secheading}>Idea 3: Mini-Games</h1>
+	</div>
+	<div className=" text-ternary-dark dark:text-ternary-light" >
+	<h1 className={styles.thirdheading}>This idea, similar to idea 2, involes having different games at different exhibits in the musuem. Games include puzzle games, games involving different pitches and tones, and even a game where shark eats fish. Users get a badge after completing each game</h1>
+	</div>
+	<br></br>
 	  <div className="text-ternary-dark dark:text-ternary-light" >
     <h1 className={styles.header}>
       <div className={styles.headerContent}>
