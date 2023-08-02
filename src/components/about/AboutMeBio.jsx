@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useContext } from 'react';
 import Modal from 'react-modal';
 import AboutMeContext from '../../context/AboutMeContext';
-import firstMeeting from '../../images/first_meeting.jpg';
+import firstMeeting from '../../images/grouppic.png';
 
 
 
@@ -47,9 +47,10 @@ Meet the team      </div>
 	/>
 		<div className="text-ternary-dark dark:text-ternary-light" >
 
-	<figcaption className={styles.caption} >The team's first requirement gathering meeting with Ruth Fletcher, Education Manager at the Hunterian Museum.</figcaption>
+	{/* <figcaption className={styles.caption} >The team's first requirement gathering meeting with Ruth Fletcher, Education Manager at the Hunterian Museum.</figcaption> */}
 	</div>
     </figure>
+    <br></br>
   <br></br>
       <div className="font-general-regular text-left">
   <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4">
