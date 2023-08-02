@@ -26,7 +26,9 @@ const AppBanner = () => {
 						delay: 0.1,
 					}}
 					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase mr-3"
-				> <img src={msMonocle} className="w-20" alt="Dark Logo" />
+				> 
+				<img src={msMonocle} className="w-20" alt="Dark Logo" />
+			{/* <img src={require("../images/wireframing/work01.gif").default} alt="GIF" className="w-1/2 h-auto" /> */}
 					Treasure Hunterian
 				</motion.h1>
 				<motion.p
@@ -93,13 +95,16 @@ const AppBanner = () => {
 				transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
 				className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
 			>
-				<img
+				{/* <img
 					src={
 						// activeTheme === 'dark' ? developerLight : developerDark
 						activeTheme === 'dark' ? hunterianMuseum : hunterianMuseum
 					}
 					alt="Developer"
-				/>
+				/> */}
+			<a href="https://shingliya.itch.io/test" >
+			<video src={require("../../images/floating_gif.mov").default} type="video/quicktime" className="w-1/2 h-auto" muted />
+			</a>
 			</motion.div>
 		</motion.section>
 	);
