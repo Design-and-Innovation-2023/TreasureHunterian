@@ -416,10 +416,13 @@ const HomePage = () => {
 				);
 			})}
 
-		<p style={{ fontSize: "80px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
+		<p style={{ fontSize: "40px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
 		We Learned Better By Actually Testing It Physically!
 	  </p>
 		</div>
+		<p style={{ fontSize: "40px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
+			This usability testing have taught us we need to improve on the navigation of the game, as well as the clues given to the players.
+	  </p>
 		
 		<br></br>
 		<br></br>
