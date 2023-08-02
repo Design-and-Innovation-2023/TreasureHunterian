@@ -20,7 +20,7 @@ export const aboutMeData = [
 	{
 		id: 2,
 		header: 'Ayan - Assistant Project Manager',
-		bio: 'In the quaint little town of Everbrook, nestled amidst rolling hills and lush forests, life seemed to flow at its own unhurried pace. The narrow cobblestone streets were lined with charming cottages adorned with colorful flower boxes, and the air carried the sweet scent of freshly baked bread from the local bakery. Everbrook was a place where neighbors knew each other by name, and the sense of community was palpable.',
+		bio: 'Hey There! My name is Ayan and I’m a computer scientist. As Assistant Product Manager on this design project, I assisted the team in keeping focus on the project objectives, come up with the storyline of the app and was part of the UI/Graphics team. Apart from that I assisted the team in generating visually pleasing mockups of the app as well as create the app trailers and demos to showcase our app. Throughout the course of this project I have picked up on people skills as well as developed a higher understanding and appreciation for the design process which all came together to deliver the best possible product we could create in the timeframe we were given. It has been a wonderful experience creating the project for the Hunterian Museum and also exploring this amazing city.',
 		email: "priyadarshiayan@gmail.com",
 		profileImage: profileAyan, // Replace this URL with the appropriate image URL
 		githubLink: 'https://github.com/csgnwinter',
