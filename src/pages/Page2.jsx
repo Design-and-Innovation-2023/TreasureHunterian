@@ -245,7 +245,7 @@ const HomePage = () => {
 </div>
 <br></br>
 	  
-		<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+		<div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4">
 		{cards.map((card) => {
 			if (card.id === 1) {
 				return (
@@ -260,6 +260,8 @@ const HomePage = () => {
 			})}
 
 			{/* Idea 01 small grid */}
+		
+		</div>
 		<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
 		{cardIdea01.map((card2) => {
 				return (
@@ -271,7 +273,6 @@ const HomePage = () => {
 				  />
 				);
 			})}
-		</div>
 		</div>
 			<br></br>
 			<br></br>
@@ -301,7 +302,7 @@ const HomePage = () => {
 <br></br>
 
 
-		<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+		<div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 		{cards.map((card) => {
 			if (card.id === 2) {
 				return (
@@ -316,6 +317,8 @@ const HomePage = () => {
 			})}
 
 			{/* Idea 02 small grid */}
+		
+		</div>
 		<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
 		{cardIdea02.map((card2) => {
 				return (
@@ -327,7 +330,6 @@ const HomePage = () => {
 				  />
 				);
 			})}
-		</div>
 		</div>
 
 	{/* For Idea 3 */}
@@ -357,9 +359,25 @@ const HomePage = () => {
 </div>
 <br></br>
 
-		<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+		<div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-4">
 		{cards.map((card) => {
-			if (card.id === 3 || card.id === 4) {
+			if (card.id === 3) {
+				return (
+				  <Card
+					key={card.id}
+					title={card.title}
+					details={card.details}
+					image={card.image}
+				  />
+				);
+			}
+			})}
+
+			
+		</div>
+		<div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-4">
+		{cards.map((card) => {
+			if (card.id === 4) {
 				return (
 				  <Card
 					key={card.id}
@@ -416,17 +434,20 @@ const HomePage = () => {
 				);
 			})}
 
-		<p style={{ fontSize: "80px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
+		<p style={{ fontSize: "40px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
 		We Learned Better By Actually Testing It Physically!
 	  </p>
 		</div>
+		<p style={{ fontSize: "40px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
+			This usability testing have taught us we need to improve on the navigation of the game, as well as the clues given to the players.
+	  </p>
 		
 		<br></br>
 		<br></br>
 		<br></br>
 		<div>
 			<p style={{ fontSize: "80px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
-				Want to learn our next chapter?<br></br>
+				Want to learn our next journey?<br></br>
 				</p>
 				<br></br>
 				<div className='text-center'>
@@ -445,7 +466,7 @@ const HomePage = () => {
 					onMouseEnter={(e) => (e.target.style.backgroundColor = 'green')}
 					onMouseLeave={(e) => (e.target.style.backgroundColor = '#0097A7')}>
 
-					Visit Chapter 3
+					Visit Journey 3
 				</a>
 
 				</div>

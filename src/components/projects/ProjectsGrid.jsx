@@ -15,10 +15,10 @@ import styles from "../../css/Picture.module.css";
 const ProjectsGrid = () => {
 
 	const data = [
-		{ id: 1, title: 'Journey 1: Requirement Gathering, Ideation', details: 'This is where we meet The Hunterian Education Manager.', image: discussion1 },
+		{ id: 1, title: 'Journey 1: Requirement Gathering', details: 'This is where we meet The Hunterian Education Manager.', image: discussion1 },
 		{ id: 2, title: 'Journey 2: Ideation, Wireframing and Usability Testing', details: 'The team showcase their brainstormed ideas and wireframes.', image: discussion2 },
 		{ id: 3, title: 'Journey 3: Prototyping', details: 'We start prototyping and understand better of the product we are creating.', image: discussion3 },
-		{ id: 4, title: 'Journey 4: Finalised Prototype and Poster', details: 'We showcase our finalised prototypes, posters and many more.', image: discussion1}
+		{ id: 4, title: 'Journey 4: Finalised Prototype', details: 'We showcase our finalised prototypes, posters and many more.', image: discussion1}
 	  ];
 
 	return (

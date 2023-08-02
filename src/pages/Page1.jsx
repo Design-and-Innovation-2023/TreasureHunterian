@@ -29,7 +29,7 @@ const Contact = () => {
 	<div className="text-ternary-dark dark:text-ternary-light" >
     <h1 className={styles.mainheader}>
       <div className={styles.headerContent}>
-        Requirement Gathering and Ideation
+        Requirement Gathering
       </div>
     </h1>	
 	</div>
@@ -154,6 +154,34 @@ const Contact = () => {
 	<div className=" text-ternary-dark dark:text-ternary-light" >
 	<h1 className={styles.thirdheading}>One of the primary reasons for conducting requirement gathering was to establish efficient communication channels with our esteemed client, Ruth Fletcher, the Educational Manager at the Hunterian Museum. During our interactions, we discovered that her preferred mode of communication was through emails, complemented by physical or online meetings held once a week. Our ability to ask useful questions, learned in class, made each meeting productive and engaging, ultimately leading to the success of our application.</h1>
 	</div>
+
+	<br></br><br></br><br></br><br></br><br></br><br></br>
+	<div>
+			<p style={{ fontSize: "80px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
+				Want to learn our next journey?<br></br>
+				</p>
+				<br></br>
+				<div className='text-center'>
+					<br></br>
+				<a
+					href="page2"
+					style={{
+						backgroundColor: '#0097A7',
+						color: 'white',
+						fontWeight: 'bold',
+						padding: '0.75rem 2.5rem',
+						borderRadius: '0.25rem',
+						boxShadow: '0 2px 4px rgba(0, 0, 0, 1)',
+						transition: 'background-color 0.5s',
+					}}
+					onMouseEnter={(e) => (e.target.style.backgroundColor = 'green')}
+					onMouseLeave={(e) => (e.target.style.backgroundColor = '#0097A7')}>
+
+					Visit Journey 2
+				</a>
+
+				</div>
+		</div>
 
 
 
