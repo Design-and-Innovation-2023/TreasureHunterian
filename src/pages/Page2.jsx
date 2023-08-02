@@ -155,7 +155,7 @@ const HomePage = () => {
 		<div className="text-ternary-dark dark:text-ternary-light" >
     <h1 className={styles.secondheader}>
       <div className={styles.headerContent}>
-	  Wireframing and Usability Testing
+	  Ideation, Wireframing and Usability Testing
       </div>
     </h1>	
 	</div>
@@ -168,6 +168,8 @@ const HomePage = () => {
 		<figcaption className={styles.secondcaption} >Both teams, working in pairs, brainstorming ideas for the project</figcaption>
 		</div>
     </figure>
+
+	
 
 
 
@@ -185,6 +187,34 @@ const HomePage = () => {
 		Wireframing
 	  </p> */}
 		<section style={{ marginLeft: '19%', marginRight: '20%', padding: '1rem 2rem' }}>
+
+			<div className=" text-ternary-dark dark:text-ternary-light" >
+	<h1 className={styles.customheading}>Ideation</h1>
+	</div>
+
+	<div className=" text-ternary-dark dark:text-ternary-light" >
+	<h1 className={styles.secheading}>Idea 1: Object Recognition Visual Storytelling</h1>
+	</div>
+
+	<div className=" text-ternary-dark dark:text-ternary-light" >
+	<h1 className={styles.thirdheading}>The process involves using a camera to scan an artifact, triggering object recognition. Once the object is recognized, the system initiates appropriate animations that play out to convey a visual storytelling experience.</h1>
+	</div>
+
+	<div className=" text-ternary-dark dark:text-ternary-light" >
+	<h1 className={styles.secheading}>Idea 2: Treature Hunterian</h1>
+	</div>
+
+	<div className=" text-ternary-dark dark:text-ternary-light" >
+	<h1 className={styles.thirdheading}>This idea involves having puzzles at different locations of the museum. Each puzzle piece contains a fact about the artefact. Upon solving the puzzle, users will receive a digital art piece by the museum.</h1>
+	</div>
+
+	<div className=" text-ternary-dark dark:text-ternary-light" >
+	<h1 className={styles.secheading}>Idea 3: Mini-Games</h1>
+	</div>
+	<div className=" text-ternary-dark dark:text-ternary-light" >
+	<h1 className={styles.thirdheading}>This idea, similar to idea 2, involes having different games at different exhibits in the musuem. Games include puzzle games, games involving different pitches and tones, and even a game where shark eats fish. Users get a badge after completing each game</h1>
+	</div>
+	<br></br>
 	  <div className="text-ternary-dark dark:text-ternary-light" >
     <h1 className={styles.header}>
       <div className={styles.headerContent}>
@@ -215,7 +245,7 @@ const HomePage = () => {
 </div>
 <br></br>
 	  
-		<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+		<div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4">
 		{cards.map((card) => {
 			if (card.id === 1) {
 				return (
@@ -230,6 +260,8 @@ const HomePage = () => {
 			})}
 
 			{/* Idea 01 small grid */}
+		
+		</div>
 		<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
 		{cardIdea01.map((card2) => {
 				return (
@@ -241,7 +273,6 @@ const HomePage = () => {
 				  />
 				);
 			})}
-		</div>
 		</div>
 			<br></br>
 			<br></br>
@@ -271,7 +302,7 @@ const HomePage = () => {
 <br></br>
 
 
-		<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+		<div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 		{cards.map((card) => {
 			if (card.id === 2) {
 				return (
@@ -286,6 +317,8 @@ const HomePage = () => {
 			})}
 
 			{/* Idea 02 small grid */}
+		
+		</div>
 		<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
 		{cardIdea02.map((card2) => {
 				return (
@@ -297,7 +330,6 @@ const HomePage = () => {
 				  />
 				);
 			})}
-		</div>
 		</div>
 
 	{/* For Idea 3 */}
@@ -327,9 +359,25 @@ const HomePage = () => {
 </div>
 <br></br>
 
-		<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+		<div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-4">
 		{cards.map((card) => {
-			if (card.id === 3 || card.id === 4) {
+			if (card.id === 3) {
+				return (
+				  <Card
+					key={card.id}
+					title={card.title}
+					details={card.details}
+					image={card.image}
+				  />
+				);
+			}
+			})}
+
+			
+		</div>
+		<div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-4">
+		{cards.map((card) => {
+			if (card.id === 4) {
 				return (
 				  <Card
 					key={card.id}
@@ -386,17 +434,20 @@ const HomePage = () => {
 				);
 			})}
 
-		<p style={{ fontSize: "80px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
+		<p style={{ fontSize: "40px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
 		We Learned Better By Actually Testing It Physically!
 	  </p>
 		</div>
+		<p style={{ fontSize: "40px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
+			This usability testing have taught us we need to improve on the navigation of the game, as well as the clues given to the players.
+	  </p>
 		
 		<br></br>
 		<br></br>
 		<br></br>
 		<div>
 			<p style={{ fontSize: "80px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
-				Want to learn our next chapter?<br></br>
+				Want to learn our next journey?<br></br>
 				</p>
 				<br></br>
 				<div className='text-center'>
@@ -415,7 +466,7 @@ const HomePage = () => {
 					onMouseEnter={(e) => (e.target.style.backgroundColor = 'green')}
 					onMouseLeave={(e) => (e.target.style.backgroundColor = '#0097A7')}>
 
-					Visit Chapter 3
+					Visit Journey 3
 				</a>
 
 				</div>

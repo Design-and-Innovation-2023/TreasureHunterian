@@ -3,12 +3,9 @@ import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import HireMeModal from '../HireMeModal';
-import logoLight from '../../images/logo-light.svg';
-import logoDark from '../../images/logo-dark.svg';
 import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
-import theHunterianLogo from '../../images/hunterian-logo.png'
-import theHunterianLogoDark from '../../images/hunterian-logo-dark.png'
+import TreasureHunterian from '../../images/Logo/TreasureHunterianLogo.png'
 
 const AppHeader = () => {
 	const [showMenu, setShowMenu] = useState(false);
@@ -48,21 +45,10 @@ const AppHeader = () => {
 				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex justify-between items-center px-4 sm:px-0">
 					<div>
-						<Link to="/">
-							{activeTheme === 'dark' ? (
-								<img
-									src={theHunterianLogoDark}
-									className="w-20"
-									alt="Dark Logo"
-								/>
-							) : (
-								<img
-									src={theHunterianLogo}
-									className="w-20"
-									alt="Dark Logo"
-								/>
-							)}
-						</Link>
+					<Link to="/">
+							<img src={TreasureHunterian} style={{ width: '150px', height: '150px' }} alt="Dark Logo" />
+						
+					</Link>
 					</div>
 
 					{/* Theme switcher small screen */}
@@ -173,11 +159,18 @@ const AppHeader = () => {
 						Our Application
 					</Link> */}
 					<Link
-					to="/application"
+					to="/OurApplication"
 					className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-					aria-label="Our Application"
+					aria-label="OurApplication"
 					>
-						Our Application
+					Our Application					
+					</Link>
+					<Link
+					to="/Resources"
+					className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+					aria-label="Resources"
+					>
+					Resources					
 					</Link>
 				</div>
 

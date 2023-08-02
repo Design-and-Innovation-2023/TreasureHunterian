@@ -5,14 +5,16 @@ import { ProjectsProvider } from '../context/ProjectsContext';
 import Button from '../components/reusable/Button';
 import ReactPlayer from 'react-player';
 import { motion } from 'framer-motion';
+import TreasureHunterianGameTrailer from '../images/Videos/App_Trailer.mp4'
 
 
 const Home = () => {
 
-	const videoUrl = 'https://www.youtube.com/watch?v=ra9X4_mfd2k&ab_channel=ShyamPrasad';
+	const videoUrl = TreasureHunterianGameTrailer;
 
 	return (
 		<div className="container mx-auto">
+      
 			<AppBanner></AppBanner>
 			<div className="relative h-0" style={{ paddingTop: '5%', height:"100%" }}>
 			<motion.div
@@ -24,22 +26,27 @@ const Home = () => {
           delay: 0.1,
         }}
         style={{
-          height: '100vh', // Set the height of motion.div to 100% of the viewport height
+          height: '100vh',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',          
         }}        
-      >        
+      >   
+      <div>
+      <p style={{fontSize:"40px"}} className="font-general-semibold  text-ternary-dark dark:text-primary-light uppercase text-center">
+        Watch our trailer
+      </p>
         <ReactPlayer
           url={videoUrl}
           controls
           width="100%"
-          height="100%" // Set the height of ReactPlayer to 100% of the parent element (motion.div)
+          height="100%"
           style={{
-            border: '4px solid #000000', // Set the border styles for the video
-            borderRadius: '8px', // Add some border radius for rounded corners
+            border: '0px solid #000000',
+            borderRadius: '0px',
           }}          
         />
+      </div>
       </motion.div>
     </div>
 			<ProjectsProvider>
