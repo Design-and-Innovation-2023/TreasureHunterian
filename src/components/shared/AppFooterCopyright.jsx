@@ -1,5 +1,6 @@
 import TheHunterianLogo from '../../../src/images/Collaborations/HunterianLogo-Black.jpg';
 import UniversityOfGlasgow from '../../../src/images/Collaborations/UoG_colour.jpeg'
+import TheHunterianAndUniversityOfGlasgow from '../../../src/images/Collaborations/H_UofG_FULLCOL_LOCKUP.png'
 
 function AppFooterCopyright() {
 	return (
@@ -8,16 +9,15 @@ function AppFooterCopyright() {
 			<div className="text-lg text-ternary-dark dark:text-ternary-light">
 				<p>In Collaboration with:</p>
 				<br></br>
-
-				<div style={{ display:"flex" }}>
-				<img src={TheHunterianLogo} alt="The Hunterian" style={{ width: "200px", height: "auto", marginRight:"10px" }} />
-				
-				<img src={UniversityOfGlasgow} alt="Picture 02" style={{ width: "200px", height: "auto" }} />
-
+				<div className='flex item-center justify-center'>
+				<img src={TheHunterianAndUniversityOfGlasgow} alt="The Hunterian" style={{ width: "200px", height: "auto" }} />
 				</div>
+				
+				{/* <img src={UniversityOfGlasgow} alt="Picture 02" style={{ width: "200px", height: "auto" }} /> */}
+
 
 				<br></br>
-				<p>&copy;2023 Team 3B Portfolio. TREASURE HUNTERIAN</p>
+				<p>&copy;2023 Team 3B Portfolio. TREASURE HUNTerian </p>
 
 
 				{/* &copy; {new Date().getFullYear()}

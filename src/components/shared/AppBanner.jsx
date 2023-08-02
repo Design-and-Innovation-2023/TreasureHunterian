@@ -1,8 +1,4 @@
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
-import { FiArrowDownCircle } from 'react-icons/fi';
-import developerLight from '../../images/developer.svg';
-import developerDark from '../../images/developer-dark.svg';
-import hunterianMuseum from '../../images/hunterian_museum.jpg'
 import { motion } from 'framer-motion';
 import msMonocle from '../../images/Ms_Monocle.png'
 import QRCode from '../../images/QR/GameQR.png'
