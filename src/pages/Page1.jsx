@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import firstMeeting from '../images/first_meeting.jpg';
 import styles from "../css/Picture.module.css";
-import { BiMaleFemale } from "react-icons/bi";
-import { FaEye } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 // import { Typography } from "../../@material-tailwind/react";
 
 
@@ -163,9 +162,9 @@ const Contact = () => {
 				<br></br>
 				<div className='text-center'>
 					<br></br>
-				<a
-					href="page2"
-					style={{
+					<Link
+						to="/page2"
+						style={{
 						backgroundColor: '#0097A7',
 						color: 'white',
 						fontWeight: 'bold',
@@ -173,12 +172,11 @@ const Contact = () => {
 						borderRadius: '0.25rem',
 						boxShadow: '0 2px 4px rgba(0, 0, 0, 1)',
 						transition: 'background-color 0.5s',
-					}}
-					onMouseEnter={(e) => (e.target.style.backgroundColor = 'green')}
-					onMouseLeave={(e) => (e.target.style.backgroundColor = '#0097A7')}>
-
-					Visit Journey 2
-				</a>
+						}}
+						onMouseEnter={(e) => (e.target.style.backgroundColor = 'green')}
+						onMouseLeave={(e) => (e.target.style.backgroundColor = '#0097A7')}>
+						Visit Journey 2
+					</Link>
 
 				</div>
 		</div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; 
+import { Link } from 'react-router-dom';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import styles from "../css/Picture.module.css";
@@ -246,8 +247,8 @@ const Prototyping = () => {
 				<br></br>
 				<div className='text-center'>
 					<br></br>
-				<a
-					href="page4"
+				<Link
+					to="/page4"
 					style={{
 						backgroundColor: '#0097A7',
 						color: 'white',
@@ -261,7 +262,7 @@ const Prototyping = () => {
 					onMouseLeave={(e) => (e.target.style.backgroundColor = '#0097A7')}>
 
 					Visit Journey 4
-				</a>
+				</Link>
 
 				</div>
 		</div>

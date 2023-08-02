@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Card from '../components/projects/Card.jsx'
 import idea1 from '../images/wireframing/idea1.jpg'
 import idea2 from '../images/wireframing/idea2.jpg'
@@ -452,8 +453,8 @@ const HomePage = () => {
 				<br></br>
 				<div className='text-center'>
 					<br></br>
-				<a
-					href="page3"
+					<Link
+						to="/page3"
 					style={{
 						backgroundColor: '#0097A7',
 						color: 'white',
@@ -467,7 +468,7 @@ const HomePage = () => {
 					onMouseLeave={(e) => (e.target.style.backgroundColor = '#0097A7')}>
 
 					Visit Journey 3
-				</a>
+				</Link>
 
 				</div>
 		</div>
