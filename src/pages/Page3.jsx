@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import styles from "../css/Picture.module.css";
+import figmaLogo from "../images/Logo/figma_logo.png";
 
 
 const Prototyping = () => {
@@ -233,6 +234,20 @@ const Prototyping = () => {
 					<br/>
 					Interactivity of the application aligns with the age group.
 					</p>
+				</div>
+
+				<div style={{textAlign:"center"}}>
+					Click the icon to see our finalised Figma prototype
+					<br></br>
+					<a href="https://www.figma.com/file/urGJDQBlfWFU3P7tuCcLms/Treasure-Hunt?type=design&node-id=0%3A1&mode=design&t=MV3WFm7R1LG5cQjI-1" 
+					target="_blank" rel="noopener noreferrer">
+						<img
+						src={figmaLogo}
+						style={{ width: '10%', height: 'auto', display: 'block', margin: '0 auto' }}
+						alt="Figma Logo"
+						/>
+					</a>
+					Finalised Figma
 				</div>
 				
 			</section>
