@@ -120,6 +120,22 @@ Meet the team      </div>
           Honorable mention to Ruth Fletcher for her guidance and directions in the project, and for her patience in addressing all our inquiries.
           Lastly, the team would like to thank the teaching assistants for their help in the project and for their feedback.
         </p>
+<br></br>
+<br></br>
+        <hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light"/>
+
+
+        <section style={{
+        marginLeft: '10%',
+        marginRight: '10%',
+        padding: '1rem 2rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '30vh',
+      }}>
+        <h1 style={{ fontSize: '5rem'}} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">Thank you.</h1>
+      </section>  
 
       </section>
 </div>
