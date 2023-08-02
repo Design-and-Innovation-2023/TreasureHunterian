@@ -29,13 +29,13 @@ const HomePage = () => {
 	  {
 		id: 1,
 		title: 'Idea 1 Wireframe',
-		details: 'Minigames that targets younger kids between 11 to 14.',
+		details: 'Minigames that targets younger children between 11 to 14.',
 		image: idea1,
 	  },
 	  {
 		id: 2,
 		title: 'Idea 2 Wireframe',
-		details: 'A game targeting younger kids between 11 to 14.',
+		details: 'A game targeting younger children between 11 to 14.',
 		image: idea2,
 	  },
 	  {
@@ -56,7 +56,7 @@ const HomePage = () => {
 		{
 			id: 1,
 			title: 'The Brainstorming Process',
-			details: 'The team wants to ensure while the kids are interacting with the application’s engaging games, they would still be cautious and aware of their surroundings. Hence, the mini games the team has brainstormed incorporates interactions of the artefacts while playing them. 3 main mini games that were idealised were a puzzle, a listening and a mining game. To have the proper interactions of the application, the children would have to go to the relevant locations to start the activity and engage with the artefact.',
+			details: 'The team wants to ensure while the children are interacting with the application’s engaging games, they would still be cautious and aware of their surroundings. Hence, the mini games the team has brainstormed incorporates interactions of the artefacts while playing them. 3 main mini games that were idealised were a puzzle, a listening and a mining game. To have the proper interactions of the application, the children would have to go to the relevant locations to start the activity and engage with the artefact.',
 			image: idea11,
 		},
 		{
@@ -71,13 +71,13 @@ const HomePage = () => {
 		{
 			id: 1,
 			title: 'The Brainstorming Process',
-			details: "With the educational aspect as the main highlight of this idea, the team designed the wireframing to be similiar to that of a treasure hunt game. The game would revolve a simple puzzle game where the children would have to seek for clues of the artifact's description within the museum to solve.",
+			details: "With the educational aspect as the main highlight of this idea, the team designed the wireframing to be similiar to that of a treasure hunt game. The game would revolve a simple puzzle game where the children would have to seek for clues of the artefact's description within the museum to solve.",
 			image: wireframe01,
 		},
 		{
 			id: 2,
 			title: 'How to Play?',
-			details: 'The design concept allows the children to select multiple genres or topics relating to the artifacts within the museum. Each genre would require the children to fit puzzle pieces together, with each piece having clues to the artifact. This would additionally require the children to find clues to match the puzzle pieces with the artifacts itself. Upon completing the puzzle, a digital gift would be awarded to them and they would stand a chance to be featured in the leaderboard upon completion.',
+			details: 'The design concept allows the children to select multiple genres or topics relating to the artefacts within the museum. Each genre would require the children to fit puzzle pieces together, with each piece having clues to the artefact. This would additionally require the children to find clues to match the puzzle pieces with the artefacts itself. Upon completing the puzzle, a digital gift would be awarded to them and they would stand a chance to be featured in the leaderboard upon completion.',
 			image: wireframe02,
 			
 		}
@@ -93,7 +93,7 @@ const HomePage = () => {
 		{
 			id: 2,
 			title: 'How to Play? ',
-			details: 'Simply get on the website and use your mobile phone as the camera. The game would be in Augmented Reality with a companion to guide you along, follow the instructions and dialogues throughout the play the game. At every quest, you would be required to find the artifact and scan it to unlock the next quest. Upon completion, you would be rewarded with a digital gift and a chance to be featured in the leaderboard.',
+			details: 'Simply get on the website and use your mobile phone as the camera. The game would be in Augmented Reality with a companion to guide you along, follow the instructions and dialogues throughout the play the game. At every quest, you would be required to find the artefact and scan it to unlock the next quest. Upon completion, you would be rewarded with a digital gift and a chance to be featured in the leaderboard.',
 			image: idea33,
 		}
 	]
@@ -198,7 +198,7 @@ const HomePage = () => {
 	</div>
 
 	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.thirdheading}>The process involves using a camera to scan an artifact, triggering object recognition. Once the object is recognized, the system initiates appropriate animations that play out to convey a visual storytelling experience.</h1>
+	<h1 className={styles.thirdheading}>The process involves using a camera to scan an artefact, triggering object recognition. Once the object is recognized, the system initiates appropriate animations that play out to convey a visual storytelling experience.</h1>
 	</div>
 
 	<div className=" text-ternary-dark dark:text-ternary-light" >
@@ -225,7 +225,7 @@ const HomePage = () => {
 	</div>
 
 	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.thirdheading}>The intention of is to design a simple, fun to play yet simple web application through wire framing while meeting the client’s requirements.</h1>
+	<h1 className={styles.thirdheading}>The intention is to design a simple, fun to play yet simple web application through wire framing while meeting the client’s requirements.</h1>
 	<h1 className={styles.thirdheading}>This includes a brain storming session where team members bounce ideas off each other and start designing those ideas as a pair.</h1>
 	<h1 className={styles.thirdheading}>The following are the team’s sketches of the ideas, with substantiating pointers of the team.</h1>
 
