@@ -4,6 +4,27 @@ import AboutClients from '../components/about/AboutClients';
 import AboutMeBio from '../components/about/AboutMeBio';
 import AboutCounter from '../components/about/AboutCounter';
 import { AboutMeProvider } from '../context/AboutMeContext';
+import styles from "../css/Picture.module.css";
+import {
+	FiGithub,
+} from 'react-icons/fi';
+
+const socialLinksDiv1 = [
+  {
+    id: 1,
+    icon: <FiGithub />,
+    url: 'https://github.com/shingliya/OIP-TEAM3B',
+  },
+];
+
+const socialLinksDiv2 = [
+  {
+    id: 2,
+    icon: <FiGithub />,
+    url: 'https://github.com/Design-and-Innovation-2023/TreasureHunterian',
+  },
+];
+
 
 
 const Resources = () => {
@@ -29,7 +50,17 @@ const Resources = () => {
       </motion.div>
             {/* Section 3 - Poster */}
             <section style={{ marginLeft: '10%', marginRight: '10%', padding: '1rem 2rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
-        <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Poster</h2>
+        {/* <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Poster</h2> */}
+
+        <div className="text-ternary-dark dark:text-ternary-light" >
+          <h1 className={styles.mainheader}>
+            <div className={styles.headerContent}>
+            Poster            
+            </div>
+          </h1>	
+        </div>
+        <br></br>
+
         <section style={{
           border: '3px solid #E57373',  // Nice red color border (You can change the color code as desired)
           borderRadius: '8px',
@@ -38,7 +69,62 @@ const Resources = () => {
         }}>
           <img src={require('../images/mainposter.png').default} alt="Poster Placeholder" style={{ maxWidth: '100%', marginBottom: '1rem' }} />
         </section>
+<br></br>
+        <div className=" text-ternary-dark dark:text-ternary-light" >
+          <h1 className={styles.mainheader}>Project Links</h1>
+          </div>
+
+          <br></br>
+
+          {/* <div className=" text-ternary-dark dark:text-ternary-light" >
+            <a href="https://github.com/Design-and-Innovation-2023/TreasureHunterian" ><h1 className={styles.secheading}>GitHub for Portfolio Website: https://github.com/Design-and-Innovation-2023/TreasureHunterian</h1></a>
+            <a href="https://github.com/shingliya/OIP-TEAM3B" ><h1 className={styles.secheading}>GitHub for the Game: https://github.com/shingliya/OIP-TEAM3B</h1>
+            </a>
+          </div> */}
+<div className="flex flex-row justify-center items-center space-x-20 mb-12 sm:mb-28">
+  <div className="font-general-regular flex flex-col justify-center items-center pr-10 mr-10">
+    <p className="text-2xl sm:text-2xl text-primary-dark dark:text-primary-light mb-5 pr-10">
+      GitHub for the Game
+    </p>
+    <ul className="flex gap-4 sm:gap-8">
+      {socialLinksDiv1.map((link) => (
+        <a
+          href={link.url}
+          target="_blank"
+          key={link.id}
+          className="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-4 duration-300"
+        >
+          <i className="text-xl sm:text-2xl md:text-3xl">{link.icon}</i>
+        </a>
+      ))}
+    </ul>
+  </div>
+
+  <div className="font-general-regular flex flex-col justify-center items-center">
+    <p className="text-2xl sm:text-2xl text-primary-dark dark:text-primary-light mb-5">
+      GitHub for the Portfolio Website
+    </p>
+    <ul className="flex gap-4 sm:gap-8">
+      {socialLinksDiv2.map((link) => (
+        <a
+          href={link.url}
+          target="_blank"
+          key={link.id}
+          className="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-4 duration-300"
+        >
+          <i className="text-xl sm:text-2xl md:text-3xl">{link.icon}</i>
+        </a>
+      ))}
+    </ul>
+  </div>
+</div>
+
+
+
       </section>
+
+
+
 <AboutMeProvider>
   				<AboutCounter />
 
