@@ -7,6 +7,7 @@ import logoLight from '../../images/logo-light.svg';
 import logoDark from '../../images/logo-dark.svg';
 import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
+import TreasureHunterian from '../../images/Logo/TreasureHunterianLogo.png'
 import theHunterianLogo from '../../images/hunterian-logo.png'
 import theHunterianLogoDark from '../../images/hunterian-logo-dark.png'
 
@@ -48,21 +49,10 @@ const AppHeader = () => {
 				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex justify-between items-center px-4 sm:px-0">
 					<div>
-						<Link to="/">
-							{activeTheme === 'dark' ? (
-								<img
-									src={theHunterianLogoDark}
-									className="w-20"
-									alt="Dark Logo"
-								/>
-							) : (
-								<img
-									src={theHunterianLogo}
-									className="w-20"
-									alt="Dark Logo"
-								/>
-							)}
-						</Link>
+					<Link to="/">
+							<img src={TreasureHunterian} style={{ width: '150px', height: '150px' }} alt="Dark Logo" />
+						
+					</Link>
 					</div>
 
 					{/* Theme switcher small screen */}
