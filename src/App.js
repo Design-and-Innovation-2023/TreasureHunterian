@@ -11,6 +11,10 @@ import Page2 from './pages/Page2'
 import Page3 from './pages/Page3'
 import Page4 from './pages/Page4'
 import DailyAndWeekly from './pages/DailyAndWeekly';
+import Resources from './pages/Resources';
+// import OurApplication from './pages/OurApplication';
+
+
 
 
 const About = lazy(() => import('./pages/AboutMe'));
@@ -19,6 +23,8 @@ const Home = lazy(() => import('./pages/Home'));
 const Projects = lazy(() => import('./pages/Projects'));
 const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
 const OurApplication = lazy(() => import('./pages/OurApplication.jsx'));
+const Resoucres = lazy(() => import('./pages/Resources.jsx'));
+
 
 
 
@@ -43,9 +49,10 @@ function App() {
 							<Route path="page1" element={<Page1 />} />
 							<Route path="page2" element={<Page2 />} />
 							<Route path="page3" element={<Page3 />} />
-							<Route path="page4" element={<OurApplication />} />
+							<Route path="page4" element={<Page4 />} />
+							<Route path="OurApplication" element={<OurApplication />} />
 							<Route path="dailyandweekly" element={<DailyAndWeekly />} />
-							<Route path="application" element={<OurApplication />} />
+							<Route path="Resources" element={<Resources />} />
 						</Routes>
 					</Suspense>
 					<AppFooter />

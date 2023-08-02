@@ -111,7 +111,7 @@ const Contact = () => {
 	</div>
 
 	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.thirdheading}>Users should be able to spend time looking at the artifact while also interacting with the application.</h1>
+	<h1 className={styles.thirdheading}>Users should be able to spend time looking at the artefact while also interacting with the application.</h1>
 	</div>
 
 	<div className=" text-ternary-dark dark:text-ternary-light" >
