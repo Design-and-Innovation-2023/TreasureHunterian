@@ -49,6 +49,7 @@ export const aboutMeData = [
 		id: 5,
 		header: 'Jeff - Creative Expert',
 		bio: "Hello, I'm Jeff Lee, a sophomore in SIT-UoG pursuing a Bachelor's in Computing Science. As part of the creative team, I contribute to our project's main designs. I'm grateful to Professor Jonathan Grizou for guiding us through the program and teaching us valuable skills beyond our academic curriculum. Special thanks to Ruth Fletcher, our client from The Hunterian Museum, for her support and guidelines towards the betterment of the final product. This project provided me with enriching experiences, including collaborating with stakeholders, effective teamwork, interpersonal skills, innovation, and project management. I take pride in being part of this transformative journey, and I'm excited to apply these experiences to future endeavors.",
+		email: "jefflee.jh@gmail.com",
 		profileImage: profileJeff, // Replace this URL with the appropriate image URL
 		githubLink: 'https://github.com/miscting',
 		linkedinLink: 'https://www.linkedin.com/in/jeffleejh/',
