@@ -233,8 +233,38 @@ const Prototyping = () => {
 					Interactivity of the application aligns with the age group.
 					</p>
 				</div>
+				
 			</section>
 		</section>
+		<br></br>
+		<br></br>
+		<br></br>
+		<div>
+			<p style={{ fontSize: "80px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
+				Want to learn our next journey?<br></br>
+				</p>
+				<br></br>
+				<div className='text-center'>
+					<br></br>
+				<a
+					href="page4"
+					style={{
+						backgroundColor: '#0097A7',
+						color: 'white',
+						fontWeight: 'bold',
+						padding: '0.75rem 2.5rem',
+						borderRadius: '0.25rem',
+						boxShadow: '0 2px 4px rgba(0, 0, 0, 1)',
+						transition: 'background-color 0.5s',
+					}}
+					onMouseEnter={(e) => (e.target.style.backgroundColor = 'green')}
+					onMouseLeave={(e) => (e.target.style.backgroundColor = '#0097A7')}>
+
+					Visit Journey 4
+				</a>
+
+				</div>
+		</div>
 	  </>
 	);
   };
