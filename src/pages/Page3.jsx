@@ -222,7 +222,7 @@ const Prototyping = () => {
 				<div style={{ boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.1)', padding: '0.5rem', borderRadius: '20px', textAlign: 'center', position: 'relative', border: '2px solid #ccc' }}>
 					<h3 style={{ fontWeight: 'bold' }}>Intuitive Clues</h3>
 					<p style={{ marginTop: '1rem', fontSize: '1rem', textAlign: 'center', listStyleType: 'disc', paddingLeft: '1rem' }}>
-					Promote interactivity with artifacts by providing intuitive clues.
+					Promote interactivity with artefacts by providing intuitive clues.
 					<br/>
 					Maintain educational aspect while enhancing the experience.
 					</p>
