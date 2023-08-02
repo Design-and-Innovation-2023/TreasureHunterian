@@ -5,6 +5,7 @@ import developerDark from '../../images/developer-dark.svg';
 import hunterianMuseum from '../../images/hunterian_museum.jpg'
 import { motion } from 'framer-motion';
 import msMonocle from '../../images/Ms_Monocle.png'
+import QRCode from '../../images/QR/GameQR.png'
 
 const AppBanner = () => {
 	const [activeTheme] = useThemeSwitcher();
@@ -14,7 +15,7 @@ const AppBanner = () => {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-			className="flex flex-col sm:justify-between items-center sm:flex-row mt-12 md:mt-2"
+			className="flex flex-col sm:justify-between items-center sm:flex-row mt-12 md:mt-2 mx-auto"
 		>
 			<div className="w-full md:w-1/3 text-left">
 				<motion.h1
@@ -27,7 +28,7 @@ const AppBanner = () => {
 					}}
 					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase mr-3"
 				> 
-				<img src={msMonocle} className="w-20" alt="Dark Logo" />
+				<img src={msMonocle} className="w-10" alt="Dark Logo" />
 			{/* <img src={require("../images/wireframing/work01.gif").default} alt="GIF" className="w-1/2 h-auto" /> */}
 					Treasure Hunterian
 				</motion.h1>
@@ -39,29 +40,18 @@ const AppBanner = () => {
 						duration: 0.9,
 						delay: 0.2,
 					}}
-					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
+					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl sm:text-left leading-normal text-gray-500 dark:text-gray-200"
 				>
-					We designed Treasure Hunterian, a game for kids to explore while in the museum for mobile website.
+					<p style={{fontSize:"30px", textAlign:"center"}}>A game for kids to explore while in the museum for mobile website</p>
 				</motion.p>
 				<br></br>
 				<br></br>
-				<div className='flex justify-center'>
-					<a
-						href="https://shingliya.itch.io/test"
-						target="_blank"
-						style={{
-							backgroundColor: '#0097A7',
-							color: 'white',
-							fontWeight: 'bold',
-							padding: '0.75rem 2.5rem',
-							borderRadius: '0.25rem',
-							boxShadow: '0 2px 4px rgba(0, 0, 0, 1)',
-							transition: 'background-color 0.5s',
-						}}
-						onMouseEnter={(e) => (e.target.style.backgroundColor = 'green')}
-						onMouseLeave={(e) => (e.target.style.backgroundColor = '#0097A7')}>
-
-						Try it now!
+				<div className='flex justify-center flex-col items-center'>
+				<p style={{fontSize:"20px"}} className="font-general-semibold  text-ternary-dark dark:text-primary-light uppercase text-center">
+					Use your mobile and scan the QR code below!
+				</p>
+					<a href="https://shingliya.itch.io/treasurehunterian" target="_blank">
+						<img src={QRCode} alt="The Hunterian" style={{ width: "200px", height: "auto", marginTop: "10px" }} />
 					</a>
 				</div>
 				<motion.div
@@ -102,8 +92,8 @@ const AppBanner = () => {
 					}
 					alt="Developer"
 				/> */}
-			<a href="https://shingliya.itch.io/test" >
-			<video src={require("../../images/floating_gif.mov").default} type="video/quicktime" className="w-1/2 h-auto" muted />
+			<a href="https://shingliya.itch.io/treasurehunterian" target='_blank'>
+				<video src={require("../../images/floating_gif.mov").default} type="video/quicktime" className="w-1/4 h-auto w-auto" muted autoPlay loop/>
 			</a>
 			</motion.div>
 		</motion.section>
