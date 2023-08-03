@@ -43,7 +43,7 @@ const Prototyping = () => {
 			<div className="text-ternary-dark dark:text-ternary-light" >
 				<h1 className={styles.secondheader}>
 				<div className={styles.headerContent}>
-				Hi-Fi Prototypes				
+				High Fidelity Prototypes				
 				</div>
 				</h1>	
 			</div>
@@ -54,7 +54,7 @@ const Prototyping = () => {
 			</p>		
 		</section>
 		
-		<hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light"/>
+		{/* <hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light"/> */}
         <section style={{ marginLeft: '10%', marginRight: '10%', padding: '1rem 2rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
 		
 			{/* <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Initial Hi-Fi Prototype</h2> */}
@@ -126,12 +126,13 @@ const Prototyping = () => {
 		</section>
 
 		
-		<hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light"/>		
+		{/* <hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light"/>		 */}
 
 		{/* Section - Feedbacks */}
 		<section style={{ marginLeft: '10%', marginRight: '10%', padding: '1rem 2rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">		
 		  	{/* <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Client Feedback</h2> */}
 
+<br></br>
 			  <div className="text-ternary-dark dark:text-ternary-light" >
     <h1 className={styles.header} style={{marginBottom:'1rem}'}} >
       <div className={styles.headerContent}>
@@ -175,8 +176,8 @@ const Prototyping = () => {
 			</section>	
 		</section>
 
-		<hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light"/>
-
+		{/* <hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light"/> */}
+<br></br>
 		{/* Section - Final Prototype */}
 		<section style={{ marginLeft: '10%', marginRight: '10%', padding: '1rem 2rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">		
 		  	{/* <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Final Hi-Fi Prototype</h2> */}

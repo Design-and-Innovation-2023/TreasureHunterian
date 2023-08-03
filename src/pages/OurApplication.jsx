@@ -66,13 +66,13 @@ const OurApplication = () => {
         {/* <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light"> <br></br> Our Final Product</h2> */}
 
         <div className="text-ternary-dark dark:text-ternary-light" >
-    <h1 className={styles.header}>
+    <h1 className={styles.mainheader}>
       <div className={styles.headerContent}>
       Our Final Product
       </div>
     </h1>	
 	</div>
-        <p style={{ fontSize: '1.2rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
+        <p  style={{ fontSize: '1.2rem' }} className="text-center font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
           Introducing Treasure Hunterian, where you will embark on a journey with an immersive storyline with our mascot Ms Monocle!
           As an adventurer at The Hunterian Museum, you will be tasked to solve clues to unlock various games and win a badge from them!
           See your name in the adventurers of the week and show off your badges to your friends!

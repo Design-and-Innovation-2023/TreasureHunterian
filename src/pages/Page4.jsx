@@ -144,7 +144,7 @@ const Prototyping = () => {
 			</p>	
 
 			<div className="text-ternary-dark dark:text-ternary-light" >
-				<h1 className={styles.secondheader}>
+				<h1 className={styles.subheader}>
 				<div className={styles.headerContent}>
 					The Assets				
 					</div>
@@ -174,7 +174,7 @@ const Prototyping = () => {
 			</p> */}
 
 			<div className="text-ternary-dark dark:text-ternary-light" >
-				<h1 className={styles.secondheader}>
+				<h1 className={styles.subheader}>
 				<div className={styles.headerContent}>
 				Watch our client test our game!
 					</div>

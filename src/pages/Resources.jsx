@@ -55,7 +55,7 @@ const Resources = () => {
         <div className="text-ternary-dark dark:text-ternary-light" >
           <h1 className={styles.mainheader}>
             <div className={styles.headerContent}>
-            Poster            
+            Design Poster            
             </div>
           </h1>	
         </div>

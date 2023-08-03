@@ -105,15 +105,17 @@ Meet the team      </div>
         </p>
 <br></br>
 <br></br>
+<br></br>
+<br></br>
         {/* <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Acknowledgements</h2> */}
         <div className="text-ternary-dark dark:text-ternary-light" >
-    <h1 className={styles.header}>
+    <h1 className={styles.subheader}>
       <div className={styles.headerContent}>
       Acknowledgements	  </div>
     </h1>	
 	</div>  
   <br></br>
-        <p style={{ fontSize: '1.2rem' }}>
+        <p className='text-center' style={{ fontSize: '1.2rem' }}>
           The team would like to express their thanks to Professor Jonathan Grizou for his guidance and support throughout the project.
           Additionally, the team would also like to thank the staff at The Hunterian Museum for their support and feedback.
           The weekly meetings has been a great help in the development of the project, and we are grateful for the opportunity to work with them.

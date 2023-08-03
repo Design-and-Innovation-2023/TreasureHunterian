@@ -56,6 +56,7 @@ const Contact = () => {
         Image caption
       </Typography>
     </figure> */}
+	<br></br>
 
 <div className="text-ternary-dark dark:text-ternary-light" >
 	<h1 className={styles.customheading}>Requirements Gathered</h1>
@@ -92,7 +93,7 @@ const Contact = () => {
         <span style={hello.subText}>Ensuring safety of participants</span>
       </div>
     </div>
-
+<br></br>
 	<div className=" text-ternary-dark dark:text-ternary-light" >
 	<h1 className={styles.customheading}>Detail of Requirements</h1>
 	</div>
@@ -126,7 +127,7 @@ const Contact = () => {
 	<div className=" text-ternary-dark dark:text-ternary-light" >
 	<h1 className={styles.thirdheading}>The application should offer a secure and pleasant environment, free from competitive pressures. Users can explore the narrative-driven gameplay at their own pace, ensuring a disturbance-free experience within the museum.</h1>
 	</div>
-
+<br></br>
 <div className="text-ternary-dark dark:text-ternary-light" >
 	<h1 className={styles.customheading}>Motivation for Requirement Gathering</h1>
 	</div>

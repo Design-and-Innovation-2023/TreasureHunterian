@@ -34,7 +34,7 @@ const DailyAndWeekly = () => {
             Every weekday, the team would document what was done for that day
                 </p>
             <p style={{fontSize:"20px"}} className=" text-ternary-dark dark:text-ternary-light">
-                and we update our clients to get feedback on our progress.</p>
+                and we would update our clients to get feedback on our progress.</p>
             <p style={{fontSize:"20px"}} className=" text-ternary-dark dark:text-ternary-light">
                 Scroll down to find out more!
             </p>
