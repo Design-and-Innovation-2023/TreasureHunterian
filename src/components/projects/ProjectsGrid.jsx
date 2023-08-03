@@ -2,7 +2,7 @@
 import discussion1 from '../../images/experiment/discussion-1.png'
 import discussion2 from '../../images/wireframing/wireframe05.jpg'
 import discussion3 from '../../images/journey3.jpeg'
-import discussion4 from '../../images/3D_Assets/3d - photo_2023-07-31 17.27.56.jpeg'
+import discussion4 from '../../images/3D_Assets/3d - photo_2023-07-31 17.27.56.png'
 import { Link } from 'react-router-dom';
 import Card from "./Card"
 import styles from "../../css/Picture.module.css";
