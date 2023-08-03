@@ -156,8 +156,8 @@ const Contact = () => {
 
 	<br></br><br></br><br></br><br></br><br></br><br></br>
 	<div>
-			<p style={{ fontSize: "80px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
-				Want to learn our next journey?<br></br>
+			<p style={{ fontSize: "60px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
+				Check out our crazy ideas!<br></br>
 				</p>
 				<br></br>
 				<div className='text-center'>

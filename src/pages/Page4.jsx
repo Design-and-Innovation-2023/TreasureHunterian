@@ -143,9 +143,13 @@ const Prototyping = () => {
 			It’s the beginning of the end. The team incorporated feedback received from our client back into the finalised prototype and this is how it looks like.
 			</p>	
 
-		<p style={{fontSize:"50px", textAlign:"center"}}>
-			The Assets
-			</p>
+			<div className="text-ternary-dark dark:text-ternary-light" >
+				<h1 className={styles.secondheader}>
+				<div className={styles.headerContent}>
+					The Assets				
+					</div>
+				</h1>	
+			</div>
 				
 		
 		<div style={{marginLeft:"5%", marginRight:"5%"}}>
@@ -165,9 +169,17 @@ const Prototyping = () => {
 			</div>
 		</div>
 		<br></br>
-		<p style={{fontSize:"40px", textAlign:"center", marginTop:"20px"}}>
-			Our client play test our game!
-			</p>
+		{/* <p style={{fontSize:"40px", textAlign:"center", marginTop:"20px"}}>
+			Watch our client test our game!
+			</p> */}
+
+			<div className="text-ternary-dark dark:text-ternary-light" >
+				<h1 className={styles.secondheader}>
+				<div className={styles.headerContent}>
+				Watch our client test our game!
+					</div>
+				</h1>	
+			</div>
 	<Timeline position="alternate">
       <TimelineItem>
         <TimelineSeparator>
@@ -349,10 +361,13 @@ const Prototyping = () => {
 			  
 	<br></br>
 	<p style={{textAlign:"center"}}>The games are designed based on the museum's artefacts! <br></br></p>
-	<div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
-	<img src={showcase1} alt="Show Case 01" style={{ width:"70%", height:"70%"}}/>
+	
+	<br></br><div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+	<img className=" text-ternary-dark dark:text-ternary-light" src={showcase1} alt="Show Case 01" style={{ width:"70%", height:"70%"}}/>
 	</div>
 		
+
+		<br></br>
 
 	<div style={{ textAlign: "center" }}>
 		<p style={{ fontSize: "30px" }}>
@@ -368,10 +383,6 @@ const Prototyping = () => {
 
 	
 		</section>
-		<br></br>
-		<br></br>
-		<br></br>
-		<br></br>
 		<br></br>
 		<br></br>
 		<br></br>

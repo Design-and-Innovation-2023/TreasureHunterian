@@ -5,6 +5,8 @@ import ReactPlayer from 'react-player';
 import Picture01 from '../images/DailyWeekly/Picture01.jpeg'
 import Picture02 from '../images/DailyWeekly/Picture02.png'
 import Picture03 from '../images/DailyWeekly/Picture03.jpeg'
+import styles from "../css/Picture.module.css";
+
 
 const DailyAndWeekly = () => {
 
@@ -14,9 +16,18 @@ const DailyAndWeekly = () => {
   return (
     <div>
           <div style={{ marginBottom: '1rem', textAlign: 'center' }}>
-         <Typography variant="h1" style={{ fontSize: '2rem', fontWeight: 'bold' }} className=" text-ternary-dark dark:text-ternary-light">
+         {/* <Typography variant="h1" style={{ fontSize: '2rem', fontWeight: 'bold' }} className=" text-ternary-dark dark:text-ternary-light">
            Daily and Weekly
-         </Typography>
+         </Typography> */}
+
+         <div className="text-ternary-dark dark:text-ternary-light" >
+          <h1 className={styles.mainheader}>
+            <div className={styles.headerContent}>
+            Dailies and Weeklies           
+            </div>
+          </h1>	
+        </div>
+
          <br></br>
          <Typography>
             <p style={{fontSize:"20px"}} className=" text-ternary-dark dark:text-ternary-light">

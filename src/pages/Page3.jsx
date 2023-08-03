@@ -259,6 +259,7 @@ const Prototyping = () => {
 				<div style={{textAlign:"center"}}>
 					Click the icon to see our finalised Figma prototype
 					<br></br>
+					<br></br>
 					<a href="https://www.figma.com/file/urGJDQBlfWFU3P7tuCcLms/Treasure-Hunt?type=design&node-id=0%3A1&mode=design&t=MV3WFm7R1LG5cQjI-1" 
 					target="_blank" rel="noopener noreferrer">
 						<img
@@ -267,7 +268,6 @@ const Prototyping = () => {
 						alt="Figma Logo"
 						/>
 					</a>
-					Finalised Figma
 				</div>
 				
 			</section>
@@ -276,8 +276,8 @@ const Prototyping = () => {
 		<br></br>
 		<br></br>
 		<div>
-			<p style={{ fontSize: "80px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
-				Want to learn our next journey?<br></br>
+			<p style={{ fontSize: "60px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
+				Is it the end?<br></br>
 				</p>
 				<br></br>
 				<div className='text-center'>
