@@ -1,291 +1,421 @@
-import { motion } from 'framer-motion';
-import firstMeeting from '../images/first_meeting.jpg';
+import React, { useState } from 'react'; 
+import { Link } from 'react-router-dom';
+import { Timeline, TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent } from '@mui/lab'
+import { Typography } from '@mui/material'
+import Carousel from 'react-multi-carousel';
+import Card from '../components/projects/Card';
+import 'react-multi-carousel/lib/styles.css';
 import styles from "../css/Picture.module.css";
-import { BiMaleFemale } from "react-icons/bi";
-import { FaEye } from "react-icons/fa";
-// import { Typography } from "../../@material-tailwind/react";
+import figmaLogo from "../images/Logo/figma_logo.png";
+import idea1 from "../images/Prototype_Assets/assets/Chat Bubble.png"
+import idea2 from "../images/Prototype_Assets/assets/Downloadable Gift.png"
+import idea3 from "../images/Prototype_Assets/assets/Ms Monocle.png"
+import idea4 from "../images/Prototype_Assets/assets/Ocean floor.jpg"
+import idea5 from "../images/Prototype_Assets/assets/accept.png"
+import idea6 from "../images/Prototype_Assets/assets/download (1).png"
+import idea7 from "../images/Prototype_Assets/assets/elasmosaurus badge locked.png"
+import idea8 from "../images/Prototype_Assets/assets/elasmosaurus badge.png"
+import idea9 from "../images/Prototype_Assets/assets/mosasaurus.png"
+import idea10 from "../images/Prototype_Assets/assets/roman badge locked.png"
+import idea11 from "../images/Prototype_Assets/assets/vase badge locked.png"
+import idea12 from "../images/Prototype_Assets/assets/fish.png"
+import showcase1 from "../images/prototyping/Showcase1/Slide1.png"
+import QRCode from '../images/QR/GameQR.png'
 
+const Prototyping = () => {
 
+	const cards = [
+		{
+		  id: 1,
+		  title: '',
+		  details: '',
+		  image: idea1,
+		},
+		{
+		  id: 2,
+		  title: '',
+		  details: '',
+		  image: idea2,
+		},
+		{
+		  id: 3,
+		  title: '',
+		  details: '',
+		  image: idea3,
+		},
+		{
+		  id: 4,
+		  title: '',
+		  details: '',
+		  image: idea4,
+		},
+		{
+		id: 5,
+		title: '',
+		details: '',
+		image: idea5,
+		},
+		{
+		id: 6,
+		title: '',
+		details: '',
+		image: idea6,
+		},
+		{
+		id: 7,
+		title: '',
+		details: '',
+		image: idea7,
+		},
+		{
+		id: 8,
+		title: '',
+		details: '',
+		image: idea8,
+		},
+		{
+		id: 9,
+		title: '',
+		details: '',
+		image: idea9,
+		},
+		{
+		id: 10,
+		title: '',
+		details: '',
+		image: idea10,
+		},
+		{
+			id: 11,
+			title: '',
+			details: '',
+			image: idea11,
+		},
+		{
+			id: 12,
+			title: '',
+			details: '',
+			image: idea12,
+		},
+	  ]
 
+	// array of image file names for initial
+	const longImages = Array.from({ length: 34 }, (_, index) => `Flow_2.${index + 1}.png`);
+   
+	// array of image file names for final
+	const shortImages = Array.from({ length: 26 }, (_, index) => `Flow_3.${index + 1}.png`);
 
+	const responsive = {
+		desktop: {
+		  breakpoint: { max: 3000, min: 1024 },
+		  items: 5,
+		  slidesToSlide: 3, // Show 3 images at a time
+		}
+	  };
+	    // state variables for each sub header
+		const [showAppDesign, setShowAppDesign] = useState(false);
+		const [showColorTheme, setShowColorTheme] = useState(false);
+		const [showAssets, setShowAssets] = useState(false);
+		const [showCartoonStyle, setShowCartoonStyle] = useState(false);
 
-const Contact = () => {
+		const [showAge, setShowAge] = useState(false);
+		const [showClue, setShowClue] = useState(false);
+		const [showGame, setShowGame] = useState(false);
+		const [showExpect, setShowExpect] = useState(false);
 
-
-    return (
-        <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-                ease: 'easeInOut',
-                duration: 0.5,
-                delay: 0.1,
-            }}
-            className="container mx-auto py-5 lg:py-10 lg:mt-10"
-        >
-
-<section style={{ paddingTop:'1%', padding: '1rem 2rem' }} className="text-ternary-dark dark:text-ternary-light" >
 		
-	<div className="text-ternary-dark dark:text-ternary-light" >
-    <h1 className={styles.mainheader}>
-      <div className={styles.headerContent}>
-        Requirement Gathering and Ideation
-      </div>
-    </h1>	
-	</div>
+	return (
+	  <>
+	  {/* Section - Hi-Fi Prototype #Initial */}
+      <section style={{ marginLeft: '10%', marginRight: '10%', padding: '1rem 2rem' }} className=" text-ternary-dark dark:text-ternary-light">
+			{/* <h2 style={{ fontSize: '3rem', marginBottom: '1rem', textAlign: 'center' }}>Hi-Fi Prototypes</h2> */}
 
-	<figure className='figure'>
-	<img
-	className="h-96 w-full rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50 mt-2"
-	src={firstMeeting}
-	alt="nature image"
-	/>
-		<div className="text-ternary-dark dark:text-ternary-light" >
-
-	<figcaption className={styles.caption} >The team's first requirement gathering meeting with Ruth Fletcher, Education Manager at the Hunterian Museum.</figcaption>
-	</div>
-    </figure>
-
-
-{/* <figure>
-      <img
-        className="h-96 w-full rounded-lg object-cover object-center"
-        src={firstMeeting}
-        alt="nature image"
-      />
-      <Typography as="caption" variant="small" className="mt-2 text-center font-normal">
-        Image caption
-      </Typography>
-    </figure> */}
-
-<div className="text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.customheading}>Requirements Gathered</h1>
-	</div>
-
-	<div style={hello.ridesFriends} className="text-ternary-dark dark:text-ternary-light">
-      <div style={{ textAlign: 'center' }}>
-        <span style={hello.numbers} className="text-ternary-dark dark:text-ternary-light">Target Audience </span>
-        <br />
-        <span style={hello.subText}>For Age Groups 8-11 and 11-14</span>
-      </div>
-      <div style={hello.verticalLine}>
-        <span style={hello.line} className="text-ternary-dark dark:text-ternary-light" ></span>
-      </div>
-      <div style={{ textAlign: 'center' }}>
-        <span style={hello.numbers}>Interactive Experience</span>
-        <br />
-        <span style={hello.subText}>Engaging Interaction between app and artefact</span>
-      </div>
-      <div style={hello.verticalLine}>
-        <span style={hello.line}></span>
-      </div>
-      <div style={{ textAlign: 'center' }}>
-        <span style={hello.numbers}>Web-based</span>
-        <br />
-        <span style={hello.subText}>Non-downloadable</span>
-      </div>
-      <div style={hello.verticalLine}>
-        <span style={hello.line}></span>
-      </div>
-      <div style={{ textAlign: 'center' }}>
-        <span style={hello.numbers}>Non-competitive</span>
-        <br />
-        <span style={hello.subText}>Ensuring safety of participants</span>
-      </div>
-    </div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.customheading}>Detail of Requirements</h1>
-	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.secheading}>Requirement 1: Target Audience</h1>
-	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.thirdheading}>The application's target audience is either the age group of 8-11 or 11-14, with a specific focus on the age group of 11-14. The main objective is to create an application that not only provides educational content but also includes engaging and enjoyable games to capture the attention of kids.</h1>
-	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.secheading}>Requirement 2: Interactive Experience</h1>
-	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.thirdheading}>Users should be able to spend time looking at the artefact while also interacting with the application.</h1>
-	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.secheading}>Requirement 3: Web-based Application</h1>
-	</div>
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.thirdheading}>The application should be web-based, eliminating the need for users to download it. It should also be designed to be mobile-friendly, allowing users to interact with it seamlessly on their mobile phones.</h1>
-	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.secheading}>Requirement 4: Non-competitive</h1>
-	</div>
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.thirdheading}>The application should offer a secure and pleasant environment, free from competitive pressures. Users can explore the narrative-driven gameplay at their own pace, ensuring a disturbance-free experience within the museum.</h1>
-	</div>
-
-<div className="text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.customheading}>Motivation for Requirement Gathering</h1>
-	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.secheading}>1: Understanding the needs of the stakeholders</h1>
-	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.thirdheading}>In our project, the motivation for requirement gathering is deeply rooted in understanding the unique needs and expectations of all stakeholders involved. We aim to engage not only the end-users but also our esteemed clients, in our case, the organisation of the Hunterian Museum. By conducting thorough requirement gathering, we managed to align everyone's perspectives and create a shared understanding of the project's goals.</h1>
-	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.secheading}>2: Defining Scope and Deliverables</h1>
-	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.thirdheading}>Requirement gathering allowed us to fully understand the scope of the project and identify the specific deliverables that needed to be achieved within the timeframe.</h1>
-	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.secheading}>3: Effective Client Communication</h1>
-	</div>
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.thirdheading}>One of the primary reasons for conducting requirement gathering was to establish efficient communication channels with our esteemed client, Ruth Fletcher, the Educational Manager at the Hunterian Museum. During our interactions, we discovered that her preferred mode of communication was through emails, complemented by physical or online meetings held once a week. Our ability to ask useful questions, learned in class, made each meeting productive and engaging, ultimately leading to the success of our application.</h1>
-	</div>
-
-
-
-
-    <div className="grid grid-cols-2 gap-10 flex-direction-row">
-
-      {/* Top Left
-	  <div className="flex flex-row items-center space-x-8">
- 		<div className="bg-gray-500 p-4">
-    <h1 style={{ fontSize: '2rem' }} className="text-white text-center">1.   Target Audience    </h1>
-			<div className="flex items-center space-x-30" style={{ fontSize: '1.4rem' }}>
-			<div className="text-white">Ages 8-11 & 11-14</div>
-			</div>
-			<div className="flex items-center space-x-30" style={{ fontSize: '1.4rem' }} >
-				<div className="text-white">
-				 
+			<div className="text-ternary-dark dark:text-ternary-light" >
+				<h1 className={styles.secondheader}>
+				<div className={styles.headerContent}>
+				Finalised Prototype			
 				</div>
+				</h1>	
+			</div>
+
+			<p style={{ fontSize: '1.5rem', marginBottom: '2rem', textAlign:"center" }}>
+			<br/>
+			It’s the beginning of the end. The team incorporated feedback received from our client back into the finalised prototype and this is how it looks like.
+			</p>	
+
+			<div className="text-ternary-dark dark:text-ternary-light" >
+				<h1 className={styles.subheader}>
+				<div className={styles.headerContent}>
+					The Assets				
+					</div>
+				</h1>	
+			</div>
+				
+		
+		<div style={{marginLeft:"5%", marginRight:"5%"}}>
+		<div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-1 lg:grid-cols-1 gap-4">
+		{cards.map((card) => {
+			if (card.id) {
+				return (
+				  <Card
+					key={card.id}
+					title={card.title}
+					details={card.details}
+					image={card.image}
+				  />
+				);
+			}
+			})}
 			</div>
 		</div>
-		</div> */}
+		<br></br>
+		{/* <p style={{fontSize:"40px", textAlign:"center", marginTop:"20px"}}>
+			Watch our client test our game!
+			</p> */}
 
-
-      {/* Top Right */}
-	  {/* <div className="flex flex-row items-center space-x-4">
- 		<div className="bg-gray-500 p-4">
-    <h1 style={{ fontSize: '2rem' }} className="text-white text-center">2.  Screen Time</h1>
-			<div className="flex items-center space-x-30" style={{ fontSize: '1.4rem' }}>
-			<div className="text-white">Users shouldn't be</div>
+			<div className="text-ternary-dark dark:text-ternary-light" >
+				<h1 className={styles.subheader}>
+				<div className={styles.headerContent}>
+				Watch our client test our game!
+					</div>
+				</h1>	
 			</div>
-		</div>
-		</div> */}
-
-
-
-
-      {/* Bottom Left */}
-	  {/* <div className="flex flex-row items-center space-x-4">
- 		<div className="bg-gray-500 p-4">
-    <h1 style={{ fontSize: '2rem' }} className="text-white text-center">3.   Interactive Experience    </h1>
-			<div className="flex items-center space-x-30" style={{ fontSize: '1.4rem' }}>
-			<div className="text-white">Should be able to interact</div>
+	<Timeline position="alternate">
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+        <Typography variant="h6" component="span">
+        <p className=" text-ternary-dark dark:text-ternary-light">
+			The player follows the map to reach the first quest location.
+              </p>
+        </Typography>
+		<div className={styles.imageWrapper}>
+				<img src={require("../images/prototyping/01.gif").default} alt="GIF" className="w-auto h-auto" style={{width:"100%", height:"auto"}} />
 			</div>
-		</div>
-		</div> */}
+    </TimelineContent>
+      </TimelineItem>
 
-      {/* Bottom Right */}
-	  {/* <div className="flex flex-row items-center space-x-4">
- 		<div className="bg-gray-500 p-4">
-    <h1 style={{ fontSize: '2rem' }} className="text-white text-center">4.   Non-Competitive</h1>
-			<div className="flex items-center space-x-30" style={{ fontSize: '1.4rem' }}>
-			<div className="text-white">Hello</div>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+            
+            <Typography variant="h6" component="span">
+            <p className=" text-ternary-dark dark:text-ternary-light">
+               Storyline begins and so does the first quest. Ms Monocles requires the player's help to complete the first quest.
+               </p>
+             </Typography>
+             <div className={styles.imageWrapper}>
+				<img src={require("../images/prototyping/02.gif").default} alt="GIF" className="w-auto h-auto" style={{width:"100%", height:"auto"}} />
 			</div>
+
+    </TimelineContent>
+      </TimelineItem>
+
+
+	  <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+        <Typography variant="h6" component="span">
+        <p className=" text-ternary-dark dark:text-ternary-light">
+		An unexpected twist in the story brings the player to an interesting challenge.
+              </p>
+        </Typography>
+		<div className={styles.imageWrapper}>
+				<img src={require("../images/prototyping/03.gif").default} alt="GIF" className="w-auto h-auto" style={{width:"100%", height:"auto"}} />
+			</div>
+    </TimelineContent>
+      </TimelineItem>
+
+	  
+	  <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+            
+            <Typography variant="h6" component="span">
+            <p className=" text-ternary-dark dark:text-ternary-light">
+			Conquer the challenge and help Ms Monocle in a tricky situation.
+               </p>
+             </Typography>
+             <div className={styles.imageWrapper}>
+				<img src={require("../images/prototyping/04.gif").default} alt="GIF" className="w-auto h-auto" style={{width:"100%", height:"auto"}} />
+			</div>
+
+    </TimelineContent>
+      </TimelineItem>
+
+	  <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+        <Typography variant="h6" component="span">
+        <p className=" text-ternary-dark dark:text-ternary-light">
+		After completion, Ms Monocles requires help from a colleague of hers and sends the player to next quest location.
+              </p>
+        </Typography>
+		<div className={styles.imageWrapper}>
+				<img src={require("../images/prototyping/05.gif").default} alt="GIF" className="w-auto h-auto" style={{width:"100%", height:"auto"}} />
+			</div>
+    </TimelineContent>
+      </TimelineItem>
+			
+	  <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+            
+            <Typography variant="h6" component="span">
+            <p className=" text-ternary-dark dark:text-ternary-light">
+			The player arrives at the next quest location and beings their new quest.
+               </p>
+             </Typography>
+             <div className={styles.imageWrapper}>
+				<img src={require("../images/prototyping/06.gif").default} alt="GIF" className="w-auto h-auto" style={{width:"100%", height:"auto"}} />
+			</div>
+    </TimelineContent>
+      </TimelineItem>
+
+	  <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+        <Typography variant="h6" component="span">
+        <p className=" text-ternary-dark dark:text-ternary-light">
+		Throughout the museum experience, the player has to complete a number of quests.
+              </p>
+        </Typography>
+		<div className={styles.imageWrapper}>
+				<img src={require("../images/prototyping/07.gif").default} alt="GIF" className="w-auto h-auto" style={{width:"100%", height:"auto"}} />
+			</div>
+    </TimelineContent>
+      </TimelineItem>
+
+	  <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+        <Typography variant="h6" component="span">
+        <p className=" text-ternary-dark dark:text-ternary-light">
+		Across their adventure, the player visits different sections of the museum.
+              </p>
+        </Typography>
+		<div className={styles.imageWrapper}>
+				<img src={require("../images/prototyping/08.gif").default} alt="GIF" className="w-auto h-auto" style={{width:"100%", height:"auto"}} />
+			</div>
+    </TimelineContent>
+      </TimelineItem>
+
+
+	  <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+        <Typography variant="h6" component="span">
+        <p className=" text-ternary-dark dark:text-ternary-light">
+		Upon 100% completion, the player is given their final prize.
+              </p>
+        </Typography>
+		<div className={styles.imageWrapper}>
+				<img src={require("../images/prototyping/09.gif").default} alt="GIF" className="w-auto h-auto" style={{width:"100%", height:"auto"}} />
+			</div>
+    </TimelineContent>
+      </TimelineItem>
+
+
+	  </Timeline>
+		
+			
+		</section>
+		{/* Section - Feedbacks */}
+		<section style={{ marginLeft: '10%', marginRight: '10%', padding: '1rem 2rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">		
+		  	{/* <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Client Feedback</h2> */}
+
+
+		</section>
+
+		{/* Section - Final Prototype */}
+		<section style={{ marginLeft: '10%', marginRight: '10%', padding: '1rem 2rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">		
+		  	{/* <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Final Hi-Fi Prototype</h2> */}
+
+			  
+	<br></br>
+	<p style={{textAlign:"center"}}>The games are designed based on the museum's artefacts! <br></br></p>
+	
+	<br></br><div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+	<img className=" text-ternary-dark dark:text-ternary-light" src={showcase1} alt="Show Case 01" style={{ width:"70%", height:"70%"}}/>
+	</div>
+		
+
+		<br></br>
+
+	<div style={{ textAlign: "center" }}>
+		<p style={{ fontSize: "30px" }}>
+			Like what you see? Try it yourself by scanning the QR code below!
+		</p>
+		
+		<div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+			<a href="https://shingliya.itch.io/treasurehunterian" target="_blank">
+			<img src={QRCode} alt="The Hunterian" style={{ width: "200px", height: "auto", marginTop: "10px" }} />
+			</a>
 		</div>
-		</div> */}
-
-    </div>
-
-
-
-{/* <div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.customheading}>Ideation</h1>
 	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.secheading}>Idea 1: Object Recognition Visual Storytelling</h1>
-	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.thirdheading}>The process involves using a camera to scan an artifact, triggering object recognition. Once the object is recognized, the system initiates appropriate animations that play out to convey a visual storytelling experience.</h1>
-	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.secheading}>Idea 2: Treature Hunterian</h1>
-	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.thirdheading}>This idea involves having puzzles at different locations of the museum. Each puzzle piece contains a fact about the artefact. Upon solving the puzzle, users will receive a digital art piece by the museum.</h1>
-	</div>
-
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.secheading}>Idea 3: Mini-Games</h1>
-	</div>
-	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.thirdheading}>This idea, similar to idea 2, involes having different games at different exhibits in the musuem. Games include puzzle games, games involving different pitches and tones, and even a game where shark eats fish. Users get a badge after completing each game</h1>
-	</div> */}
 
 	
-</section>
-        </motion.div>
-    );
-};
+		</section>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<div>
+			<p style={{ fontSize: "50px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
+			It's not about the destination, it's about the journey. <br></br> Thank you for coming along with us!
+				</p>
+				<br></br>
+				<div className='text-center'>
+					<br></br>
+				<Link
+					to="/about"
+					style={{
+						backgroundColor: '#0097A7',
+						color: 'white',
+						fontWeight: 'bold',
+						padding: '0.75rem 2.5rem',
+						borderRadius: '0.25rem',
+						boxShadow: '0 2px 4px rgba(0, 0, 0, 1)',
+						transition: 'background-color 0.5s',
+					}}
+					onMouseEnter={(e) => (e.target.style.backgroundColor = 'green')}
+					onMouseLeave={(e) => (e.target.style.backgroundColor = '#0097A7')}>
 
+					Meet the team
+				</Link>
 
-
-const hello = {
-	ridesFriends: {
-	  paddingTop: 20,
-	  display: 'flex',
-	  alignItems: 'left',
-	  flexDirection: 'row',
-	  justifyContent: 'space-evenly',
-	  width: '100%',
-	  marginBottom: 20,
-	},
-	numbers: {
-	  fontSize: 30,
-	  color: '#31C283',
-	  fontWeight: 'bold',
-	  marginRight: 20
-	},
-	subText: {
-		fontSize: 18,
-		fontWeight: 'normal',
-	  },
-	verticalLine: {
-	  position: 'relative',
-	  paddingLeft: 20,
-	  flexGrow: 1,
-	  marginLeft: 10,
-	  alignItems: 'center'
-	},
-	line: {
-	  content: '""',
-	  position: 'absolute',
-	  top: 0,
-	  left: 0,
-	  width: 1,
-	  height: '100%',
-	  backgroundColor: '#909090',
-	  alignItems: 'center'
-	},
+				</div>
+		</div>
+	  </>
+	);
   };
-		
 
-export default Contact;
+export default Prototyping;

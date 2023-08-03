@@ -5,11 +5,13 @@ import AboutMeBio from '../components/about/AboutMeBio';
 import AboutCounter from '../components/about/AboutCounter';
 import { AboutMeProvider } from '../context/AboutMeContext';
 import styles from "../css/Picture.module.css";
+import QRCode from '../images/QR/GameQR.png'
+
 
 
 
 const OurApplication = () => {
-  const videoUrl = 'https://www.youtube.com/watch?v=ra9X4_mfd2k&ab_channel=ShyamPrasad';
+  const videoUrl = 'https://youtu.be/ZNJe-RYNYRY';
 
   return (
     <>
@@ -64,20 +66,30 @@ const OurApplication = () => {
         {/* <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light"> <br></br> Our Final Product</h2> */}
 
         <div className="text-ternary-dark dark:text-ternary-light" >
-    <h1 className={styles.header}>
+    <h1 className={styles.mainheader}>
       <div className={styles.headerContent}>
       Our Final Product
       </div>
     </h1>	
 	</div>
-        <p style={{ fontSize: '1.2rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
+        <p  style={{ fontSize: '1.2rem' }} className="text-center font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
           Introducing Treasure Hunterian, where you will embark on a journey with an immersive storyline with our mascot Ms Monocle!
           As an adventurer at The Hunterian Museum, you will be tasked to solve clues to unlock various games and win a badge from them!
           See your name in the adventurers of the week and show off your badges to your friends!
         </p>
+        <br></br>
+
+        <div className='flex justify-center flex-col items-center'>
+			<p style={{ fontSize: "20px" }} className="font-general-semibold  text-ternary-dark dark:text-primary-light uppercase text-center">
+			  <br/>Use your mobile and scan the QR code below!
+			</p>
+			<a href="https://shingliya.itch.io/treasurehunterian" target="_blank">
+			  <img src={QRCode} alt="The Hunterian" style={{ width: "200px", height: "auto", marginTop: "10px" }} />
+			</a>
+		  </div>
       </section>
 
-      <hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light" />
+      {/* <hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light" /> */}
 
       {/* Section 2 - Team Reflection */}
       {/* <section style={{ marginLeft: '10%', marginRight: '10%', padding: '1rem 2rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
@@ -132,7 +144,7 @@ const OurApplication = () => {
         </p>
       </section> */}
 
-      <section style={{
+      {/* <section style={{
         marginLeft: '10%',
         marginRight: '10%',
         padding: '1rem 2rem',
@@ -142,7 +154,7 @@ const OurApplication = () => {
         height: '30vh',
       }}>
         <h1 style={{ fontSize: '5rem'}} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">Thank you.</h1>
-      </section>          
+      </section>           */}
     </>
   );
 };

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import styles from "../css/Picture.module.css";
+import figmaLogo from "../images/Logo/figma_logo.png";
 
 
 const Prototyping = () => {
@@ -11,6 +12,8 @@ const Prototyping = () => {
    
 	// array of image file names for final
 	const shortImages = Array.from({ length: 26 }, (_, index) => `Flow_3.${index + 1}.png`);
+
+	const sideBySideImages = ["image1.jpg", "image2.jpg", "image3.jpg"];
 
 	const responsive = {
 		desktop: {
@@ -40,7 +43,7 @@ const Prototyping = () => {
 			<div className="text-ternary-dark dark:text-ternary-light" >
 				<h1 className={styles.secondheader}>
 				<div className={styles.headerContent}>
-				Hi-Fi Prototypes				
+				High Fidelity Prototypes				
 				</div>
 				</h1>	
 			</div>
@@ -51,7 +54,7 @@ const Prototyping = () => {
 			</p>		
 		</section>
 		
-		<hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light"/>
+		{/* <hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light"/> */}
         <section style={{ marginLeft: '10%', marginRight: '10%', padding: '1rem 2rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
 		
 			{/* <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Initial Hi-Fi Prototype</h2> */}
@@ -123,12 +126,13 @@ const Prototyping = () => {
 		</section>
 
 		
-		<hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light"/>		
+		{/* <hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light"/>		 */}
 
 		{/* Section - Feedbacks */}
 		<section style={{ marginLeft: '10%', marginRight: '10%', padding: '1rem 2rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">		
 		  	{/* <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Client Feedback</h2> */}
 
+<br></br>
 			  <div className="text-ternary-dark dark:text-ternary-light" >
     <h1 className={styles.header} style={{marginBottom:'1rem}'}} >
       <div className={styles.headerContent}>
@@ -172,8 +176,8 @@ const Prototyping = () => {
 			</section>	
 		</section>
 
-		<hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light"/>
-
+		{/* <hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light"/> */}
+<br></br>
 		{/* Section - Final Prototype */}
 		<section style={{ marginLeft: '10%', marginRight: '10%', padding: '1rem 2rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">		
 		  	{/* <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Final Hi-Fi Prototype</h2> */}
@@ -221,7 +225,7 @@ const Prototyping = () => {
 				<div style={{ boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.1)', padding: '0.5rem', borderRadius: '20px', textAlign: 'center', position: 'relative', border: '2px solid #ccc' }}>
 					<h3 style={{ fontWeight: 'bold' }}>Intuitive Clues</h3>
 					<p style={{ marginTop: '1rem', fontSize: '1rem', textAlign: 'center', listStyleType: 'disc', paddingLeft: '1rem' }}>
-					Promote interactivity with artifacts by providing intuitive clues.
+					Promote interactivity with artefacts by providing intuitive clues.
 					<br/>
 					Maintain educational aspect while enhancing the experience.
 					</p>
@@ -234,6 +238,38 @@ const Prototyping = () => {
 					Interactivity of the application aligns with the age group.
 					</p>
 				</div>
+
+				<section style={{ padding: '1rem 2rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
+					
+						<h3 style={{ fontWeight: 'bold', marginBottom: '1rem', textAlign: 'center' }}>
+							<br/>Our mini-games are inspired by these artefacts<br/><br/>
+						</h3>			
+
+					<div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', border: '2px solid #ccc', padding: '1rem', borderRadius: '20px' }}>
+						{sideBySideImages.map((imageName, index) => (
+							<div key={index} style={{ flex: 1 }}>
+								<img
+									src={require(`../images/page3/${imageName}`).default}
+									alt={`SideBySideImage${index + 1}`}
+									style={{ width: '100%', height: 'auto', border: '1px solid #ccc', borderRadius: '10px' }}
+								/>
+							</div>
+						))}
+					</div>
+				</section>
+				<div style={{textAlign:"center"}}>
+					Click the icon to see our finalised Figma prototype
+					<br></br>
+					<br></br>
+					<a href="https://www.figma.com/file/urGJDQBlfWFU3P7tuCcLms/Treasure-Hunt?type=design&node-id=0%3A1&mode=design&t=MV3WFm7R1LG5cQjI-1" 
+					target="_blank" rel="noopener noreferrer">
+						<img
+						src={figmaLogo}
+						style={{ width: '10%', height: 'auto', display: 'block', margin: '0 auto' }}
+						alt="Figma Logo"
+						/>
+					</a>
+				</div>
 				
 			</section>
 		</section>
@@ -241,8 +277,8 @@ const Prototyping = () => {
 		<br></br>
 		<br></br>
 		<div>
-			<p style={{ fontSize: "80px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
-				Want to learn our next journey?<br></br>
+			<p style={{ fontSize: "60px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
+				Is it the end?<br></br>
 				</p>
 				<br></br>
 				<div className='text-center'>
@@ -261,7 +297,7 @@ const Prototyping = () => {
 					onMouseEnter={(e) => (e.target.style.backgroundColor = 'green')}
 					onMouseLeave={(e) => (e.target.style.backgroundColor = '#0097A7')}>
 
-					Visit Journey 4
+					Visit Chapter 4
 				</Link>
 
 				</div>

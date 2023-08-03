@@ -56,6 +56,7 @@ const Contact = () => {
         Image caption
       </Typography>
     </figure> */}
+	<br></br>
 
 <div className="text-ternary-dark dark:text-ternary-light" >
 	<h1 className={styles.customheading}>Requirements Gathered</h1>
@@ -92,7 +93,7 @@ const Contact = () => {
         <span style={hello.subText}>Ensuring safety of participants</span>
       </div>
     </div>
-
+<br></br>
 	<div className=" text-ternary-dark dark:text-ternary-light" >
 	<h1 className={styles.customheading}>Detail of Requirements</h1>
 	</div>
@@ -102,7 +103,7 @@ const Contact = () => {
 	</div>
 
 	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.thirdheading}>The application's target audience is either the age group of 8-11 or 11-14, with a specific focus on the age group of 11-14. The main objective is to create an application that not only provides educational content but also includes engaging and enjoyable games to capture the attention of kids.</h1>
+	<h1 className={styles.thirdheading}>The application's target audience is either the age group of 8-11 or 11-14, with a specific focus on the age group of 11-14. The main objective is to create an application that not only provides educational content but also includes engaging and enjoyable games to capture the attention of the children.</h1>
 	</div>
 
 	<div className=" text-ternary-dark dark:text-ternary-light" >
@@ -126,7 +127,7 @@ const Contact = () => {
 	<div className=" text-ternary-dark dark:text-ternary-light" >
 	<h1 className={styles.thirdheading}>The application should offer a secure and pleasant environment, free from competitive pressures. Users can explore the narrative-driven gameplay at their own pace, ensuring a disturbance-free experience within the museum.</h1>
 	</div>
-
+<br></br>
 <div className="text-ternary-dark dark:text-ternary-light" >
 	<h1 className={styles.customheading}>Motivation for Requirement Gathering</h1>
 	</div>
@@ -156,8 +157,8 @@ const Contact = () => {
 
 	<br></br><br></br><br></br><br></br><br></br><br></br>
 	<div>
-			<p style={{ fontSize: "80px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
-				Want to learn our next journey?<br></br>
+			<p style={{ fontSize: "60px" }} className="font-general-medium mb-1 text-ternary-dark dark:text-ternary-light text-center">
+				Check out our crazy ideas!<br></br>
 				</p>
 				<br></br>
 				<div className='text-center'>
@@ -175,7 +176,7 @@ const Contact = () => {
 						}}
 						onMouseEnter={(e) => (e.target.style.backgroundColor = 'green')}
 						onMouseLeave={(e) => (e.target.style.backgroundColor = '#0097A7')}>
-						Visit Journey 2
+						Visit Chapter 2
 					</Link>
 
 				</div>

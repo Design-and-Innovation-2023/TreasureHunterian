@@ -5,6 +5,8 @@ import ReactPlayer from 'react-player';
 import Picture01 from '../images/DailyWeekly/Picture01.jpeg'
 import Picture02 from '../images/DailyWeekly/Picture02.png'
 import Picture03 from '../images/DailyWeekly/Picture03.jpeg'
+import styles from "../css/Picture.module.css";
+
 
 const DailyAndWeekly = () => {
 
@@ -14,16 +16,25 @@ const DailyAndWeekly = () => {
   return (
     <div>
           <div style={{ marginBottom: '1rem', textAlign: 'center' }}>
-         <Typography variant="h1" style={{ fontSize: '2rem', fontWeight: 'bold' }} className=" text-ternary-dark dark:text-ternary-light">
+         {/* <Typography variant="h1" style={{ fontSize: '2rem', fontWeight: 'bold' }} className=" text-ternary-dark dark:text-ternary-light">
            Daily and Weekly
-         </Typography>
+         </Typography> */}
+
+         <div className="text-ternary-dark dark:text-ternary-light" >
+          <h1 className={styles.mainheader}>
+            <div className={styles.headerContent}>
+            Dailies and Weeklies           
+            </div>
+          </h1>	
+        </div>
+
          <br></br>
          <Typography>
             <p style={{fontSize:"20px"}} className=" text-ternary-dark dark:text-ternary-light">
             Every weekday, the team would document what was done for that day
                 </p>
             <p style={{fontSize:"20px"}} className=" text-ternary-dark dark:text-ternary-light">
-                and we update our clients to get feedback on our progress.</p>
+                and we would update our clients to get feedback on our progress.</p>
             <p style={{fontSize:"20px"}} className=" text-ternary-dark dark:text-ternary-light">
                 Scroll down to find out more!
             </p>
@@ -336,6 +347,69 @@ const DailyAndWeekly = () => {
             <br></br><br></br>
             We are looking forward to the exhibition where we get to showcase our product.
             </p>
+
+             </Typography>
+    </TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+                 <Typography variant="h6" component="span">
+                 <p className=" text-ternary-dark dark:text-ternary-light">
+               01 August 2023
+               </p>
+             </Typography>
+             <Typography>
+             <p className=" text-ternary-dark dark:text-ternary-light">
+             T-2 Days!
+ 
+Firstly we started our morning by gaining some wonderful insights by Prof Jonathan on our portfolio website, web app as well as the poster. We really appreciate all the feedback even the smaller detailed ones, we truly believe polishing those small details is the key to creating a better product that could potentially end up getting used.
+ <br></br> <br></br>
+After which we had our final meeting with you before the exhibition. The purpose of this meeting was to showcase the product in it's final iteration of prototyping and for you to get to use it in the museum environment with the role of a museum visitor. We observed as you tapped, reacted, read, enjoyed the story we were trying to tell through our application, the stories behind the artefacts.
+ <br></br><br></br>
+As for the portfolio website we are still working on it, adding content in as well as structuring the content to be visually easy for our readers to go through our journey during this design process. As mentioned earlier we are going to be incorporating a lot of the feedback we received this morning in class and restructure it a bit.
+ <br></br><br></br>
+We are left with polishing our poster, adding some final polishes to our game and filling and structuring our portfolio website. We are really eager to showcase what we have on Thursday.
+             </p>
+            
+            </Typography>
+
+            <br></br>
+
+        </TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot variant="outlined" color="primary" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+            
+            <Typography variant="h6" component="span">
+            <p className=" text-ternary-dark dark:text-ternary-light">
+               02 August 2023
+               </p>
+             </Typography>
+             <Typography>
+             <p className=" text-ternary-dark dark:text-ternary-light">
+             "It's not the destination, it's the journey." - Ralph Waldo Emerson
+<br></br><br></br>
+This quote sums up Team 3B's experience during this project very well. Before getting started on the project we were only concerned about how the end product would look like straight away even before knowing more about the problem itself. However, we were taught to slow down, to focus on those small and minor problems before tackling the bigger ones. 
+<br></br><br></br>
+So for one of the last times, here is the update for today. Today, we finished polishing our web app with things like sound effects and small detail changes. Apart from that we have completed and finalised our poster before submitting it for printing, really excited to see how it turns out on the A1 poster tomorrow! 
+<br></br><br></br>
+For the portfolio website we again continued filling out our content, structuring the content and started incorporating some polished versions of our existing aspects of the website. One such as example is we replaced the placeholder for including the link to our web app with a 3D phone animation which prompts readers to click on it, upon which they would be transported to our web app website. This, firstly, made it more appealing than a url link to readers and, secondly, made the website a little bit more fun to interact with and not just some standard static website. We also created a longer version of our app trailer that highlights the main features/strong points of our app. We shall be showcasing the trailer tomorrow during the exhibition. 
+<br></br><br></br>
+Again, we are so exciting to show you all everything we have been working on.
+<br></br><br></br>
+See you tomorrow, Ruth!
+             </p>
+             
 
              </Typography>
     </TimelineContent>
