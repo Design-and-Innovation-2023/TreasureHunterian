@@ -9,7 +9,7 @@ import styles from "../css/Picture.module.css";
 
 
 const OurApplication = () => {
-  const videoUrl = 'https://www.youtube.com/watch?v=ra9X4_mfd2k&ab_channel=ShyamPrasad';
+  const videoUrl = 'https://youtu.be/ZNJe-RYNYRY';
 
   return (
     <>
