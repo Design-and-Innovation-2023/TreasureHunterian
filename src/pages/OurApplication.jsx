@@ -5,6 +5,8 @@ import AboutMeBio from '../components/about/AboutMeBio';
 import AboutCounter from '../components/about/AboutCounter';
 import { AboutMeProvider } from '../context/AboutMeContext';
 import styles from "../css/Picture.module.css";
+import QRCode from '../images/QR/GameQR.png'
+
 
 
 
@@ -75,6 +77,16 @@ const OurApplication = () => {
           As an adventurer at The Hunterian Museum, you will be tasked to solve clues to unlock various games and win a badge from them!
           See your name in the adventurers of the week and show off your badges to your friends!
         </p>
+        <br></br>
+
+        <div className='flex justify-center flex-col items-center'>
+			<p style={{ fontSize: "20px" }} className="font-general-semibold  text-ternary-dark dark:text-primary-light uppercase text-center">
+			  <br/>Use your mobile and scan the QR code below!
+			</p>
+			<a href="https://shingliya.itch.io/treasurehunterian" target="_blank">
+			  <img src={QRCode} alt="The Hunterian" style={{ width: "200px", height: "auto", marginTop: "10px" }} />
+			</a>
+		  </div>
       </section>
 
       {/* <hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light" /> */}
