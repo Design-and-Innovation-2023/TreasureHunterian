@@ -13,6 +13,8 @@ const Prototyping = () => {
 	// array of image file names for final
 	const shortImages = Array.from({ length: 26 }, (_, index) => `Flow_3.${index + 1}.png`);
 
+	const sideBySideImages = ["image1.jpg", "image2.jpg", "image3.jpg"];
+
 	const responsive = {
 		desktop: {
 		  breakpoint: { max: 3000, min: 1024 },
@@ -222,7 +224,7 @@ const Prototyping = () => {
 				<div style={{ boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.1)', padding: '0.5rem', borderRadius: '20px', textAlign: 'center', position: 'relative', border: '2px solid #ccc' }}>
 					<h3 style={{ fontWeight: 'bold' }}>Intuitive Clues</h3>
 					<p style={{ marginTop: '1rem', fontSize: '1rem', textAlign: 'center', listStyleType: 'disc', paddingLeft: '1rem' }}>
-					Promote interactivity with artifacts by providing intuitive clues.
+					Promote interactivity with artefacts by providing intuitive clues.
 					<br/>
 					Maintain educational aspect while enhancing the experience.
 					</p>
@@ -236,6 +238,24 @@ const Prototyping = () => {
 					</p>
 				</div>
 
+				<section style={{ padding: '1rem 2rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
+					
+						<h3 style={{ fontWeight: 'bold', marginBottom: '1rem', textAlign: 'center' }}>
+							<br/>Our mini-games are inspired by these artefacts<br/><br/>
+						</h3>			
+
+					<div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', border: '2px solid #ccc', padding: '1rem', borderRadius: '20px' }}>
+						{sideBySideImages.map((imageName, index) => (
+							<div key={index} style={{ flex: 1 }}>
+								<img
+									src={require(`../images/page3/${imageName}`).default}
+									alt={`SideBySideImage${index + 1}`}
+									style={{ width: '100%', height: 'auto', border: '1px solid #ccc', borderRadius: '10px' }}
+								/>
+							</div>
+						))}
+					</div>
+				</section>
 				<div style={{textAlign:"center"}}>
 					Click the icon to see our finalised Figma prototype
 					<br></br>

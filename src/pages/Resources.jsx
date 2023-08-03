@@ -62,10 +62,10 @@ const Resources = () => {
         <br></br>
 
         <section style={{
-          border: '3px solid #E57373',  // Nice red color border (You can change the color code as desired)
+          border: '3px solid #E57373',
           borderRadius: '8px',
           boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-          padding: '0.5rem',           // Add some padding to the section to make it slightly thicker
+          padding: '0.5rem',
         }}>
           <img src={require('../images/mainposter.png').default} alt="Poster Placeholder" style={{ maxWidth: '100%', marginBottom: '1rem' }} />
         </section>
@@ -143,7 +143,7 @@ const Resources = () => {
         </p>
       </section> */}
 
-      <hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light" />
+      {/* <hr style={{ margin: '2rem 10%', border: '1px solid' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light" /> */}
 
       {/* Section 2 - Team Reflection */}
       {/* <section style={{ marginLeft: '10%', marginRight: '10%', padding: '1rem 2rem' }} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
@@ -198,7 +198,7 @@ const Resources = () => {
         </p>
       </section> */}
 
-      <section style={{
+      {/* <section style={{
         marginLeft: '10%',
         marginRight: '10%',
         padding: '1rem 2rem',
@@ -208,7 +208,7 @@ const Resources = () => {
         height: '30vh',
       }}>
         <h1 style={{ fontSize: '5rem'}} className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">Thank you.</h1>
-      </section>          
+      </section>           */}
     </>
   );
 };

@@ -102,7 +102,7 @@ const Contact = () => {
 	</div>
 
 	<div className=" text-ternary-dark dark:text-ternary-light" >
-	<h1 className={styles.thirdheading}>The application's target audience is either the age group of 8-11 or 11-14, with a specific focus on the age group of 11-14. The main objective is to create an application that not only provides educational content but also includes engaging and enjoyable games to capture the attention of kids.</h1>
+	<h1 className={styles.thirdheading}>The application's target audience is either the age group of 8-11 or 11-14, with a specific focus on the age group of 11-14. The main objective is to create an application that not only provides educational content but also includes engaging and enjoyable games to capture the attention of the children.</h1>
 	</div>
 
 	<div className=" text-ternary-dark dark:text-ternary-light" >
