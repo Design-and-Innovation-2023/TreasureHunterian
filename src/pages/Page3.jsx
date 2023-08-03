@@ -296,7 +296,7 @@ const Prototyping = () => {
 					onMouseEnter={(e) => (e.target.style.backgroundColor = 'green')}
 					onMouseLeave={(e) => (e.target.style.backgroundColor = '#0097A7')}>
 
-					Visit Journey 4
+					Visit Chapter 4
 				</Link>
 
 				</div>

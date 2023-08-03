@@ -467,7 +467,7 @@ const HomePage = () => {
 					onMouseEnter={(e) => (e.target.style.backgroundColor = 'green')}
 					onMouseLeave={(e) => (e.target.style.backgroundColor = '#0097A7')}>
 
-					Visit Journey 3
+					Visit Chapter 3
 				</Link>
 
 				</div>

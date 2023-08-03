@@ -175,7 +175,7 @@ const Contact = () => {
 						}}
 						onMouseEnter={(e) => (e.target.style.backgroundColor = 'green')}
 						onMouseLeave={(e) => (e.target.style.backgroundColor = '#0097A7')}>
-						Visit Journey 2
+						Visit Chapter 2
 					</Link>
 
 				</div>
