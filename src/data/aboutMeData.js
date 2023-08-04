@@ -24,7 +24,7 @@ export const aboutMeData = [
 		email: "priyadarshiayan@gmail.com",
 		profileImage: profileAyan, // Replace this URL with the appropriate image URL
 		githubLink: 'https://github.com/csgnwinter',
-		linkedinLink: 'www.linkedin.com/in/ayan-priyadarshi-52621757',
+		linkedinLink: 'https://www.linkedin.com/in/ayan-priyadarshi-52621757',
 	},
 	// Add more items with different profileImage URLs as needed
 	{
