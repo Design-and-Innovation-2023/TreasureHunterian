@@ -15,7 +15,7 @@ export const aboutMeData = [
 		email: "shyamprasad.sit@outlook.com",
 		profileImage: profileShyam, // Replace this URL with the appropriate image URL
 		githubLink: 'https://github.com/shyxxm',
-		linkedinLink: 'https://www.linkedin.com/in/shyam-prasad',
+		linkedinLink: 'https://www.linkedin.com/in/shyam-prasad-61a998175/',
 	},
 	{
 		id: 2,
