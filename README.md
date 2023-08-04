@@ -18,8 +18,6 @@
 # About The Project
 ![ScreenCaptures](ScreenCaptures.png)
 
-This is a design project done in collaboration with The Hunterian Museum as part of our Overseas Immersion Programme in Glasgow. The application is currently hosted on [itch.io](https://shingliya.itch.io/treasurehunterian).
-
 This is a web portfolio built using React and Tailwind aiming to showcase the journey made by team. Highlights of the journey include Requirement Gathering, Ideation, Wireframing and more.
 
 The website is currently hosted on https://design-and-innovation-2023.github.io/TreasureHunterian/.
